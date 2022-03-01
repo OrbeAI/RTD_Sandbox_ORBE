@@ -133,7 +133,7 @@ Neste "molde" quando colocarmos novos atributos descritivos, sem o atributo alvo
 
 .. image:: images/ML/modelagem.png
    :align: center
-   :width: 350
+   :width: 250
    
 03.Avaliação do modelo
 ====
@@ -144,7 +144,7 @@ A avaliação consiste em fornecer para o modelo a base de teste, sem o atributo
 
 .. image:: images/ML/avaliacao_modelo.png
    :align: center
-   :width: 350
+   :width: 250
 
 Agora compararamos a predição do modelo com os atributos alvo de teste (y_teste)
 
@@ -166,7 +166,7 @@ Overfitting é o termo usado para quando na hora da modelagem o algoritmo sofre 
 
 .. image:: images/ML/overfitting.png
    :align: center
-   :width: 350
+   :width: 450
 
 Imagine em uma prova onde o aluno não sabe nada da prova e o professor fornecesse todas as respostas corretas no dia anterior e o aluno decora essas respostas.
 O aluno consequentemente gabarita a prova, porém isso não significa que ele aprendeu, se em uma prova futura o professor der outras perguntas, o aluno não irá saber responder.
@@ -180,7 +180,7 @@ Underfitting é o termo utilizado para quando na hora da modelagem algoritmo nã
 
 .. image:: images/ML/underfitting.png
    :align: center
-   :width: 350
+   :width: 450
 
 
 
