@@ -85,6 +85,10 @@ Após a modelagem, nossso então modelo de classificação irá ver o atributo a
 .. only:: html
 
    .. figure:: knn.gif
+   
+.. only:: html
+
+   .. image:: images/ML/knn.gif
 
 
 Ou seja, **no algoritmo K-NN a maioria das classes dos vizinhos irá ditar a nossa classificação.**
