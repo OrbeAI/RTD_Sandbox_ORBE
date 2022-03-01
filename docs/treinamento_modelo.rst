@@ -173,7 +173,7 @@ O aluno consequentemente gabarita a prova, porém isso não significa que ele ap
 
 A mesma coisa acontece com nosso modelo ao sofrer de overfitting, ele "decora" as respostas, porém ao tentar realizar novas predições, irá errar a grande maioria.
 
-### **04.b.Underfitting**
+04.b.Underfitting
 ----
 
 Underfitting é o termo utilizado para quando na hora da modelagem algoritmo não conseguiu se adequar aos dados. 
