@@ -55,3 +55,10 @@ Conteúdos
    streamlit_introducao.rst
    streamlit_teachable.rst
    streamlit_github.rst
+   
+.. toctree::
+   :caption: MACHINE LEARNING
+   :maxdepth: 1
+   
+   treinamento_modelo.rst
+   aprendizado_supervisionado.rst
