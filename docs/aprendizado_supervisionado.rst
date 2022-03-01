@@ -22,10 +22,6 @@ São aqueles que nos ajudam a descrever o atributo alvo, é com esses atributos 
 
 Tendo isso em mente, aprendizado supervisionado é justamente quando nos fornecemos o atributo alvo na hora da modelagem do algoritmo de ML
 
-```
-# This is formatted as code
-```
-
 
 
 Imagine o seguinte exemplo, nós temos os seguintes atributos descritivos:
