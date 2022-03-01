@@ -1,4 +1,4 @@
-Introdução
+Treinamento de um modelo de ML
 ****
 
 Antes de iniciarmos o treinamento do modelo de Machine Learning, vamos retormar rapidamente o roteiro de um projeto de ciência de dados:
