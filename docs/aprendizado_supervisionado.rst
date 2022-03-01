@@ -6,7 +6,7 @@ Aprendizado supervisionado
 
 .. image:: images/ML/aprendizado_maquina.png
    :align: center
-   :width: 350
+   :width: 450
 
 
 Dentro de nosso DataFrame, cada coluna é um atributo, e eles podem ser separados em:
@@ -62,7 +62,7 @@ Ou seja, em uma tarefa de classificação, nosso modelo de ML irá, através das
 
 .. image:: images/ML/tarefa_classificacao.png
    :align: center
-   :width: 350
+   :width: 450
    
 
 02.b.Algoritmos de classificação
@@ -99,7 +99,7 @@ Caso o K seja igual a 3, ele busca os três vizinhos mais próximos e verifica q
 
 .. image:: images/ML/classes_vizinhos.png
    :align: center
-   :width: 350
+   :width: 450
 
 
 .. note::
@@ -127,12 +127,12 @@ Na prática, esse cálculo ficaria assim:
 
 .. image:: images/ML/triangulo_retangulo_exemplo.png
    :align: center
-   :width: 350
+   :width: 200
 
 
 .. image:: images/ML/formula_hipotenusa.png
    :align: center
-   :width: 350
+   :width: 550
    
 Retomando ao exemplo de classificação de tamanhos de calças, imagine que nós temos:
 
@@ -157,14 +157,14 @@ Para resolver qual a distância entre esses dois pontos o algoritmo irá  substi
 
 .. image:: images/ML/distancia_pontos_triangulo_calculo.png
    :align: center
-   :width: 350
+   :width: 450
 
 Conforme dito anteriormente o nome dessa distância é a distância euclidiana. 
 O K-NN trabalha com diversos tipos de distância, a melhor a se utilizar depende dos seus dados e do problema de negócio abordado. 
 
 .. image:: images/ML/tipos_distancia.png
    :align: center
-   :width: 350
+   :width: 450
 
 02.c.Avaliação de modelos de classificação
 ----
@@ -185,7 +185,7 @@ O segundo passo é considerar o número de classes que temos dentro da nossa bas
 
 .. image:: images/ML/cartas.png
    :align: center
-   :width: 350
+   :width: 550
 
 Tendo essas informações, se nós dermos um chute para descobrir qual o naipe da carta com elas viradas para baixo, temos 33% de chance de acerto. Se a taxa de acerto do modelo for menor que 33% não vale a pena ter um modelo de Machine Learning para resolver esse problema.
 
@@ -207,7 +207,7 @@ Na matriz de confusão temos em verde as classes que o modelo acertou, e em verm
 
 .. image:: images/ML/matriz_confusao.png
    :align: center
-   :width: 350
+   :width: 450
 
 De acordo com a matriz de confusão o modelo do banco classificou:
 
@@ -236,7 +236,7 @@ A Matriz de confusão possui cada quadrante com um nome, a lógica por trás do 
 
 .. image:: images/ML/verdadeiro_falso_positivo_negativo.png
    :align: center
-   :width: 350
+   :width: 550
 
 
 **Taxa de acerto**
@@ -259,7 +259,7 @@ Para calcular a precisão nós fazemos as classes preditas como VP dividido por 
 
 .. image:: images/ML/precisao.png
    :align: center
-   :width: 350
+   :width: 450
 
 
 Após ter os números da taxas de acerto e precisão e analisar numericamente junto com nosso problema de negócio podemos dizer se esse modelo é eficaz ou não.
@@ -267,6 +267,6 @@ Após ter os números da taxas de acerto e precisão e analisar numericamente ju
 
 .. image:: images/ML/metricas_avaliacao.png
    :align: center
-   :width: 350
+   :width: 550
 
 
