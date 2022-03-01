@@ -263,6 +263,6 @@ Após ter os números da taxas de acerto e precisão e analisar numericamente ju
 
 .. image:: images/ML/metricas_avaliacao.png
    :align: center
-   :width: 550
+   :width: 650
 
 
