@@ -50,7 +50,7 @@ Após o treino, este algoritmo se torna um modelo e está pronto para predizer n
 02.a.O que é tarefa de classificação
 ----
 
-Dentro do aprendizado supervisionado teamos a tarefa de classificação.
+Dentro do aprendizado supervisionado temos a tarefa de classificação.
 
 Quando estamos trabalhando com a tarefa de classificação o nosso atributo alvo é justamente uma classe, por exemplo tamanho da calça, crédito aprovado ou reprovado, paciente está doente ou pode ter alta.
 
@@ -79,7 +79,7 @@ Por exemplo, dado que temos dois atributos descritivos, peso e altura, e o nosso
 
 Nós iremos realizar a modelagem desse algoritmo, lembrando que é um algoritmo de aprendizagem supervisionada, então iremos fornecer os atributos descritivos e alvo nessa etapa.
 
-Após a modelagem, nossso então modelo de classificação irá ver o atributo alvo a ser predito e classificar com base nos vizinhos mais próximos que colocamos para ele levar em consideração, que neste caso é 5. 
+Após a modelagem, nossso modelo de classificação irá ver o atributo alvo a ser predito e classificar com base nos vizinhos mais próximos que colocamos para ele levar em consideração, que no exemplo abaixo é 5. 
 
 .. only:: html
 
@@ -90,7 +90,7 @@ Ou seja, **no algoritmo K-NN a maioria das classes dos vizinhos irá ditar a nos
 
 Portanto quando o K for igual a 1, ele irá buscar somente o primeiro vizinho mais próximo, que em nosso exemplo é o tamanho M. 
 
-Caso o K seja igual a 3, ele busca os três vizinhos mais próximos e verifica quais estão em maior quantidade, em nosso caso, será o tamanho P. O mesmo vale para K igual a cinco.
+Caso o K seja igual a 3, ele busca os três vizinhos mais próximos e verifica quais estão em maior quantidade, em nosso caso, será o tamanho P. O mesmo vale para K igual a 5 neste exemplo.
 
 .. image:: images/ML/classes_vizinhos.png
    :align: center
@@ -105,7 +105,7 @@ Caso o K seja igual a 3, ele busca os três vizinhos mais próximos e verifica q
 02.b.II.Cálculo de distãncia
 ++++
 
-Vale a pena ressaltar que o algoritmo K-NN realiza vários tipos de cálculos, porém aqui iremos focar somente no cálculo de distância euclidiana para você entender o funcionamento do algoritmo.
+Vale a pena ressaltar que o K-NN realiza vários tipos de cálculos, porém aqui iremos focar somente no cálculo de distância euclidiana apenas para você entender o funcionamento do algoritmo.
 
 Porém não é necessário fazer essas contas, o computador irá fazer em poucas linhas de código no jupyter notebook.
 
@@ -131,9 +131,9 @@ Na prática, esse cálculo ficaria assim:
    
 Retomando ao exemplo de classificação de tamanhos de calças, imagine que nós temos:
 
-* Uma pessoa com 65kg e 165cm que veste calça do tamanho P
+* Uma pessoa com 65kg e 165cm que veste calça do tamanho P, classificada em vermelho em nosso gráfico
 
-* Uma pessoa com 67kg e 185cm que queremos classificar qual o tamanho de calça ela usa
+* Uma pessoa com 67kg e 185cm que queremos classificar qual o tamanho de calça ela usa.
 
 
 .. image:: images/ML/distancia_pontos.png
@@ -153,13 +153,15 @@ Para resolver qual a distância entre esses dois pontos o algoritmo irá  substi
 .. image:: images/ML/distancia_pontos_triangulo_calculo.png
    :align: center
    :width: 450
+   
+Essa é uma das formas que o K-NN utiliza para calcular a distância entre os pontos vizinhos e ver qual é o mais próximo, daí que vem o nome.
 
 Conforme dito anteriormente o nome dessa distância é a distância euclidiana. 
 O K-NN trabalha com diversos tipos de distância, a melhor a se utilizar depende dos seus dados e do problema de negócio abordado. 
 
 .. image:: images/ML/tipos_distancia.png
    :align: center
-   :width: 450
+   :width: 550
 
 02.c.Avaliação de modelos de classificação
 ----
@@ -187,9 +189,9 @@ Tendo essas informações, se nós dermos um chute para descobrir qual o naipe d
 02.c.III.Matriz de confusão
 ++++
 
-A Matriz de Confusão é uma ferramenta importante para avaliar erros e acertos do modelo, o seu nome se refere à confusão que o modelo faz ao classificar os atributos alvo.
+A Matriz de Confusão é uma ferramenta importante para avaliar erros e acertos do modelo, o seu nome se refere à confusão (predições erradas) que o modelo faz ao classificar os atributos alvos.
 
-Imagine um banco que utiliza um modelo de Machine Learning para classificar:
+Imagine um banco que utiliza um modelo de Machine Learning para classificar se irá liberar crédito ou não:
 
 
 * Se a pessoa não pagar o empréstimo é classificada como **INADIMPLENTE**
@@ -227,11 +229,11 @@ A Matriz de confusão possui cada quadrante com um nome, a lógica por trás do 
 
 * O modelo previu corretamente?
   
-  Responda com Verdadeiro ou Falso
+   Responda com Verdadeiro ou Falso
 
 .. image:: images/ML/verdadeiro_falso_positivo_negativo.png
    :align: center
-   :width: 550
+   :width: 650
 
 
 **Taxa de acerto**
@@ -254,14 +256,14 @@ Para calcular a precisão nós fazemos as classes preditas como VP dividido por 
 
 .. image:: images/ML/precisao.png
    :align: center
-   :width: 450
+   :width: 650
 
 
-Após ter os números da taxas de acerto e precisão e analisar numericamente junto com nosso problema de negócio podemos dizer se esse modelo é eficaz ou não.
+Após ter os números da taxas de acerto, precisão basta analisar numericamente junto ao nosso problema de negócio podemos dizer se esse modelo é eficaz ou não.
 
 
 .. image:: images/ML/metricas_avaliacao.png
    :align: center
-   :width: 650
+   :width: 950
 
 
