@@ -81,11 +81,6 @@ Nós iremos realizar a modelagem desse algoritmo, lembrando que é um algoritmo 
 
 Após a modelagem, nossso então modelo de classificação irá ver o atributo alvo a ser predito e classificar com base nos vizinhos mais próximos que colocamos para ele levar em consideração, que neste caso é 5. 
 
-
-.. only:: html
-
-   .. figure:: knn.gif
-   
 .. only:: html
 
    .. image:: images/ML/knn.gif
