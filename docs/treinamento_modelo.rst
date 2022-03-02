@@ -70,7 +70,7 @@ Escalonar os atributos preditores ou descritores significa colocá-los em uma me
 
 .. image:: images/ML/sem_escalonar_os_dados.png
    :align: center
-   :width: 350
+   :width: 450
 
 Repare que entre no atributo peso o menor valor é 58 e o maior 96, enquanto em altura, o menor valor já começa com 165 e o maior é 190. Essa distância pode ser um problema para algoritmos como o K-NN, que calcula a distância entre pontos.
 
@@ -79,7 +79,7 @@ Ao colocarmos em uma escala fica:
 
 .. image:: images/ML/dados_escalonados.png
    :align: center
-   :width: 350
+   :width: 450
 
 
 
@@ -94,7 +94,7 @@ Fizemos a primeira divisão que é separar em atributos preditores e atributo al
 
 .. image:: images/ML/treino_teste.png
    :align: center
-   :width: 350
+   :width: 450
 
 
 Essa divisão entre base de treino e base de teste é realizada para que:
@@ -109,7 +109,7 @@ Por uma questão de nomenclatura chamamos as partes divididas da seguinte forma:
 
 .. image:: images/ML/xtreino_xteste.png
    :align: center
-   :width: 350
+   :width: 450
 
 
 Onde:
@@ -148,11 +148,11 @@ A avaliação consiste em fornecer para o modelo a base de teste, sem o atributo
 
 Agora compararamos a predição do modelo com os atributos alvo de teste (y_teste)
 
-.. image:: images/ML/predicao_yteste.png
+.. image:: images/ML/predicao_yteste2.png
    :align: center
    :width: 350
 
-Neste exemplo ele acertou basicamente 66%, isto significa que ele tem uma acurácia de 66%. 
+Neste exemplo ele acertou aproximadamente 66%, isto significa que ele tem uma acurácia de 66%. 
 
 Neste momento olhamos para o nosso roteiro de um projeto de ciência de dados e verificamos se essa porcentagem de acertos faz sentido para o nosso problema de negócio, caso não faça voltamos ao começo, caso faça, damos sequência ao nosso projeto.
 
@@ -168,15 +168,15 @@ Overfitting é o termo usado para quando na hora da modelagem o algoritmo sofre 
    :align: center
    :width: 450
 
-Imagine em uma prova onde o aluno não sabe nada da prova e o professor fornecesse todas as respostas corretas no dia anterior e o aluno decora essas respostas.
-O aluno consequentemente gabarita a prova, porém isso não significa que ele aprendeu, se em uma prova futura o professor der outras perguntas, o aluno não irá saber responder.
+Imagine em uma situação onde o aluno não sabe nada da prova e o professor fornecesse todas as respostas corretas no dia anterior e o aluno decora essas respostas.
+O aluno consequentemente gabarita a prova, porém isso não significa que ele aprendeu, se em um teste futuro o professor der outras perguntas, o aluno não irá saber responder.
 
 A mesma coisa acontece com nosso modelo ao sofrer de overfitting, ele "decora" as respostas, porém ao tentar realizar novas predições, irá errar a grande maioria.
 
 04.b.Underfitting
 ----
 
-Underfitting é o termo utilizado para quando na hora da modelagem algoritmo não conseguiu se adequar aos dados. 
+Underfitting é o termo utilizado para quando na hora da modelagem o algoritmo não conseguiu se adequar aos dados. Ou seja, não aprendeu nada, neste caso, consequentemente o modelo irá ter uma acurácia muito baixa e errar a grande maioria das predições.
 
 .. image:: images/ML/underfitting.png
    :align: center
