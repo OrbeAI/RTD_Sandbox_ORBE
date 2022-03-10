@@ -490,7 +490,7 @@ O passo a passo realizado pelo algoritmo Floresta de Decisão é o seguinte:
 
 
 03.c.Avaliação de modelos de regressão
-++++
+----
 
 **03.c.I.O que é erro**
 
