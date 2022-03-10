@@ -303,7 +303,7 @@ Dessa forma, ao predizer um dado novo, será calculado em qual posição da reta
 
 
 É necessário que os atributos preditores tenham alguma correlação entre si para utilizar o algoritmo de Regressão Linear, caso não tenham, será melhor utilizar outro algoritmo.
-**Co**relação é uma relação junta.**Co** vem do latim e significa ao lado (piloto, **co**piloto, autor, **co**autor.
+Corelação é uma relação junta. **Co** vem do latim e significa ao lado (piloto, **co** piloto, autor, **co** autor.
 Nós temos os seguintes tipos de correlação:
 
 **1.Correlação positiva.**
