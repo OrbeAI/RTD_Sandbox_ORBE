@@ -102,7 +102,7 @@ Caso o K seja igual a 3, ele busca os três vizinhos mais próximos e verifica q
    Em nosso exemplo só usamos os valores de K igual a números ímpares, porém no caso de K for um número par, e as classes estiverem equilibradas, duas classes azuis e duas classes vermelhas por exemplo, o que irá ditar a classificação é a qual dessas duas classes está mais próximo.
    
 
-02.b.II.Cálculo de distãncia
+02.b.II.Cálculo de distância
 ++++
 
 Vale a pena ressaltar que o K-NN realiza vários tipos de cálculos, porém aqui iremos focar somente no cálculo de distância euclidiana apenas para você entender o funcionamento do algoritmo.
@@ -313,7 +313,7 @@ Nessa relação, quando uma variável aumenta, a outra também, por isso é uma 
 
 .. image:: images/ML_Reg/corelacao_positiva.png
    :align: center
-   :width: 450
+   :width: 350
 
 
 **2.Correlação negativa.**
@@ -322,7 +322,7 @@ Por outro lado, nós temos a correlação negativa, onde, quando uma variável a
 
 .. image:: images/ML_Reg/corelacao_negativa.png
    :align: center
-   :width: 450
+   :width: 350
 
 **3.Corelação nula**
 
@@ -331,7 +331,7 @@ Quando os dados estão assim, não é indicado utilizar o algoritmo de Regressã
 
 .. image:: images/ML_Reg/corelacao_nula.png
    :align: center
-   :width: 450
+   :width: 250
 
 
 Vale lembrar que **correlação não é causalidade!**
@@ -341,7 +341,7 @@ No site http://tylervigen.com/spurious-correlations temos diversos gráficos com
 
 .. image:: images/ML_Reg/chart.png
    :align: center
-   :width: 450
+   :width: 650
 
 
 Você não irá precisar realizar os cálculos durante o dia a dia, mas para entender o funcionamento do seu modelo, é importante saber que o algoritmo de Regressão Linear utiliza a **equação da reta** para calcular e predizer o atributo alvo. 
@@ -404,7 +404,7 @@ Para calcular o desvio padrão nós temos que tirar a raiz da soma dos valores i
 
 .. image:: images/ML_Reg/desvio_padrao.png
    :align: center
-   :width: 450
+   :width: 550
 
 
 Dessa forma, durante a modelagem de dados o Algoritmo irá realizar os seguintes passo a passo:
@@ -413,13 +413,13 @@ Dessa forma, durante a modelagem de dados o Algoritmo irá realizar os seguintes
 
 .. image:: images/ML_Reg/desvio_padrao_alvo.png
    :align: center
-   :width: 450
+   :width: 350
 
 2.Calcular o desvio padrão de cada atributo preditor.
 
 .. image:: images/ML_Reg/desvio_padrao_preditor.png
    :align: center
-   :width: 450
+   :width: 350
 
 3.Calcular a redução do desvio padrão de cada atributo preditor.
 
@@ -445,7 +445,7 @@ O algoritmo Floresta Aleatória possui esse nome pois de forma aleatória ele se
 
 .. image:: images/ML_Reg/floresta_aleatoria.png
    :align: center
-   :width: 450
+   :width: 550
 
 Esse algoritmo ajuda em relação ao underfitting e overfitting, como ele seleciona os dados de treinamento (linhas e colunas) de forma aleatória para criar as árvores de decisões acaba impedindo um possível overfitting, que é uma superadequação aos dados. 
 
@@ -498,7 +498,7 @@ Erro é sempre o número predito pelo modelo menos o número real.
 
 .. image:: images/ML_Reg/erro.png
    :align: center
-   :width: 450 
+   :width: 350 
 
 No caso de "erros negativos" usa-se o ferramental módulo, onde trabalha com o valor absoluto do número, ignorando o sinal, ou elevar ao quadrado e depois tirar a raiz. 
 
@@ -534,4 +534,4 @@ A Raiz do Erro Médio Quadrático é a **Métrica de avaliação mais usada**. P
 
 .. image:: images/ML_Reg/raiz_erro_medio_quadratico.png
    :align: center
-   :width: 450 
+   :width: 350 
