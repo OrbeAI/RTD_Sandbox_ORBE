@@ -492,7 +492,8 @@ O passo a passo realizado pelo algoritmo Floresta de Decisão é o seguinte:
 03.c.Avaliação de modelos de regressão
 ----
 
-**03.c.I.O que é erro**
+03.c.I.O que é erro
+++++
 
 Erro é sempre o número predito pelo modelo menos o número real.
 
@@ -506,7 +507,8 @@ No caso de "erros negativos" usa-se o ferramental módulo, onde trabalha com o v
    :align: center
    :width: 450 
    
-**03.c.II.Como medir o erro**
+03.c.II.Como medir o erro
+++++
 
 Para medir um erro nós temos 3 formas:
 
