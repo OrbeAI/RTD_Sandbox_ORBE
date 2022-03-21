@@ -17,7 +17,7 @@ Daí que surge o termo **Robota**, remetendo ao **trabalho forçado** (repetitiv
 
 .. image:: images/RPA/robota.png
    :align: center
-   :width: 350
+   :width: 550
 
 Portanto de acordo com a origem da palavra quando falamos em "construir um robô" para determinada atividade, no fundo estamos falando em colocar o computador para executar um trabalho forçado (repetitivo e pouco produtivo) para nós.
 
@@ -34,8 +34,8 @@ Com isso podemos realizar diversas atividades como preenchimento, extração, tr
    Lembre-se sempre do conceito de *Garbage in - Garbage out* 
 
    .. image:: images/RPA/garbage.png
-   :align: center
-   :width: 350
+      :align: center
+      :width: 450
 
    **Cuidado para não automatizar um processo ineficiente!** "Automatizar a burrice" consome recursos (tempo e dinheiro) para implementar, identificar e corrigir as falhas. 
 
@@ -52,7 +52,7 @@ Por exemplo no desenho abaixo, uma Árvore de decisão para chatbot de atendimen
 
 .. image:: images/RPA/arvore_decisao.png
    :align: center
-   :width: 350
+   :width: 550
 
 
 02.b.RPA com NLP-NLU-NLG
@@ -78,7 +78,7 @@ Através da ferramenta Google Treds é possível verificar o constante crescimen
 
 .. image:: images/RPA/treds.png
    :align: center
-   :width: 350
+   :width: 550
 
 Essa pesquisa foi feita pegando o período de tempo de 2016 até 2022
 
@@ -91,7 +91,7 @@ A maioria das descobertas feitas por inventores ao redor do mundo foram em momen
 
 .. image:: images/RPA/genios.png
    :align: center
-   :width: 350
+   :width: 450
 
 Como é possível perceber, esses grandes gênios tiveram insights não quando estavam focados no problema, mas sim ao relaxar. 
 
