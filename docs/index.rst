@@ -4,49 +4,49 @@
 ____________________________________________________________
 
 
-Conteúdos
+Orbe.AI - SANDBOX - Material de referência 
 --------
 
 .. toctree::
    :caption: PYTHON
    :maxdepth: 1
 
-   python_introducao
-   python_dados
-   python_estrutura_dados
-   python_estrutura_condicao
-   python_estrutura_repeticao
-   python_funcao
-   python_ficha_resumo
+   python_introducao.rst
+   python_dados.rst
+   python_estrutura_dados.rst
+   python_estrutura_condicao.rst
+   python_estrutura_repeticao.rst
+   python_funcao.rst
+   python_erros.rst
 
 
 .. toctree::
    :caption: PANDAS
    :maxdepth: 1
    
-   pandas_introducao
-   pandas_compreensao_dados
-   pandas_tratamentos_dados
+   pandas_introducao.rst
+   pandas_compreensao_dados.rst
+   pandas_tratamentos_dados.rst
 
 
 .. toctree::
    :caption: GRAFICOS
    :maxdepth: 1
 
-   grafico_matplotlib_introducao
-   grafico_matplotlib_linha
-   grafico_matplotlib_barra
-   grafico_matplotlib_histograma
-   grafico_matplotlib_boxplot
-   grafico_folium_grafico_geografico
+   grafico_matplotlib_introducao.rst
+   grafico_matplotlib_linha.rst
+   grafico_matplotlib_barra.rst
+   grafico_matplotlib_histograma.rst
+   grafico_matplotlib_boxplot.rst
+   grafico_folium_grafico_geografico.rst
    
 .. toctree::
    :caption: GITHUB
    :maxdepth: 1
 
-   github_introducao
-   github_perfil
-   github_restante
+   github_introducao.rst
+   github_perfil.rst
+   github_restante.rst
 
 .. toctree::
    :caption: STREAMLIT
@@ -60,5 +60,5 @@ Conteúdos
    :caption: MACHINE LEARNING
    :maxdepth: 1
    
-   treinamento_modelo.rst
-   aprendizado_supervisionado.rst
+   ml_treinamento_modelo.rst
+   ml_aprendizado_supervisionado.rst
