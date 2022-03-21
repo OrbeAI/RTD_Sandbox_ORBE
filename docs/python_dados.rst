@@ -135,7 +135,6 @@ O resultado será esse:
 
 
 02.b.Método ``upper()`` com ``string``
-
 -----
 
 O método ``upper()`` retorna uma string onde todos as letras estão em maiúsculas, símbolos e números são ignorados.
