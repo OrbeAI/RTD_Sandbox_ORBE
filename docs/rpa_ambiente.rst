@@ -12,19 +12,19 @@ Como a biblioteca de RPA que iremos utilizar (Pyautogui) acessa alguns comandos 
 
 .. image:: images/RPA/anaconda_1.png
    :align: center
-   :width: 350
+   :width: 450
 
 3.Clique em *Download*
 
 .. image:: images/RPA/anaconda_2.png
    :align: center
-   :width: 350
+   :width: 450
 
 4.Aguarde a instalação, depois clique em *Next* até finalizar, na última etapa basta desmarcar as opções e clicar em *Finish*
 
 .. image:: images/RPA/anaconda_3.png
    :align: center
-   :width: 350
+   :width: 550
 
 
 02.Acessar o Jupyter
@@ -39,13 +39,13 @@ Agora que a Anaconda já está instalada, podemos acessar o Jupyter Notebook, pa
 
 .. image:: images/RPA/anaconda_4.png
    :align: center
-   :width: 350
+   :width: 450
 
 2.Verificar se o Jupyter Notebook está instalado.
 
 .. image:: images/RPA/anaconda_5.png
    :align: center
-   :width: 350
+   :width: 450
 
 3.Clicar no programa Jupyter Notebook.
 
@@ -59,13 +59,13 @@ Para instalar a biblioteca que iremos utilizar para criar nossos RPA:
 
 .. image:: images/RPA/anaconda_prompt.png
    :align: center
-   :width: 350
+   :width: 450
 
 2.Com o prompt aberto digite **pip install pyautogui** e clique enter
 
 .. image:: images/RPA/pyautogui.png
    :align: center
-   :width: 350
+   :width: 550
 
 Ele irá instalar uma série de dependências e depois irá aparecer *Successfully installed pyauogui-* e o numero da versão instalada.
 
@@ -88,7 +88,7 @@ Para isso, clique na pasta *Downloads* depois clique em *New* e então clique em
 
 .. image:: images/RPA/new_folder.png
    :align: center
-   :width: 350
+   :width: 450
 
 02.c.II.Renomeando o repositório
 ++++
@@ -97,13 +97,13 @@ Depois uma nova pasta chamada *Untitled Folder* irá surgir dentro da pasta *Dow
 
 .. image:: images/RPA/rename.png
    :align: center
-   :width: 350
+   :width: 550
 
 Então só selecionar o nome desejado e clicar em *Rename*
 
 .. image:: images/RPA/rename_2.png
    :align: center
-   :width: 350
+   :width: 550
 
 02.c.III.Acessando o Jupyter
 ++++
@@ -112,16 +112,16 @@ Agora que já temos um repositório nomeado corretamente podemos criar um Jupyte
 
 .. image:: images/RPA/new_jupyter.png
    :align: center
-   :width: 350
+   :width: 550
 
 Apesar da interface ser um pouco diferente do Google Colaboratory, seu funcionamento é praticamente igual. 
 
 .. image:: images/RPA/jupyter.png
    :align: center
-   :width: 350
+   :width: 450
 
 Neste bloco podemos escrever códigos em linguagem Python e ao clicar *Run* iremos rodar o código da célula selecionada.
 
 .. image:: images/RPA/run_python.png
    :align: center
-   :width: 350
+   :width: 450
