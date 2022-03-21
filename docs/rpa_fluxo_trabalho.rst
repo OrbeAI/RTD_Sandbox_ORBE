@@ -13,7 +13,7 @@ Uma sugestão que nós damos é pegar as etapas macro e decupá-las em diversas 
 
 .. image:: images/RPA/fluxo_trabalho.png
    :align: center
-   :width: 350
+   :width: 650
 
 Essa etapa é importante para definir em qual etapa o robô irá utilizar o mouse, ou o teclado, e também entender se sua solução irá rodar apenas no seu computador, se irá rodar em outros computadores, etc. Para que seja possível criar um fluxo que atenda a sua realidade.
 
