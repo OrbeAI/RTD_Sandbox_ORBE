@@ -26,7 +26,7 @@ Este comando ``pyautogui.position()`` informa a posição do mouse na tela, é u
 
 .. image:: images/RPA/position.png
    :align: center
-   :width: 350
+   :width: 650
 
 Lembrando que a posição do mouse varia para diferentes tamanhos de tela.
 
@@ -37,7 +37,7 @@ Este comando nos informa qual a resolução da tela em altura (y) e largura (x)
 
 .. image:: images/RPA/size.png
    :align: center
-   :width: 350
+   :width: 650
 
 01.d.pyautogui.press('tecla')
 ----
@@ -56,7 +56,7 @@ Com este comando podemos mover o cursor do mouse para as posições indicadas, l
 
 .. image:: images/RPA/moveTo.png
    :align: center
-   :width: 350
+   :width: 650
 
 01.g.pyautogui.click()
 ----
@@ -74,7 +74,7 @@ Basta substituir pelas teclas desejadas.
 
 .. image:: images/RPA/hotkey.png
    :align: center
-   :width: 350
+   :width: 650
 
 01.i.time.sleep(tempo_desejado) 
 ----
@@ -87,4 +87,4 @@ Basta substituir o valor dentro do parênteses pelo tempo de espera desejado
 
 .. image:: images/RPA/time.png
    :align: center
-   :width: 350
+   :width: 650
