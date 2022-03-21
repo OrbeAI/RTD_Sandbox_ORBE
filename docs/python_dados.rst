@@ -1,4 +1,3 @@
-
 Dados
 *************
 
@@ -50,6 +49,117 @@ Veja o exemplo para criar uma variável que o valor armazenado é um dado tipo `
 .. code-block:: python   
    
    >>> str
+
+02.a.Método ``strip()`` com ``string``
+-----
+
+02.a.I.Removendo espaços
+++++
+
+
+O método ``strip()`` remove quaisquer caracteres indicado em dentro de seu parêntese ().
+Caso não seja indicado nenhum caractere ele ira buscar remover o espaço. 
+
+Exemplo:
+
+.. code-block:: python
+   :linenos:
+
+   #Criando uma variável chamada fruta_com_espaço e armazenando o valor de "   banana   "
+   fruta_com_espaço = "    banana   "
+
+   #Criando uma variável chamada fruta_sem_espaço e retirando o espaço da variável anterior
+   fruta_sem_espaço = fruta_com_espaço.strip()
+
+   #Imprimindo a variável fruta_sem_espaço
+   print(fruta_sem_espaço)
+
+O resultado será esse:
+
+.. code-block:: python
+   :linenos:
+
+   banana
+
+02.a.II.Removendo caracteres
+++++
+
+Nós também podemos utilizar o método ``strip()`` para remover outros caracteres.
+
+Exemplo:
+
+.. code-block:: python
+   :linenos:
+
+   #Criando uma variável chamada fruta_com_caractere e armazenando o valor de ",,..banana,,.."
+   fruta_com_caractere = ",,..banana,,.."
+
+   #Criando uma variável chamada fruta_sem_caractere e retirando os caracteres ,. da variável anterior
+   fruta_sem_caractere = fruta_com_caractere.strip(",.")
+
+   #Imprimindo a variável fruta_sem_espaço
+   print(fruta_sem_caractere)
+
+O resultado será esse:
+
+.. code-block:: python
+   :linenos:
+
+   banana
+
+02.a.III.Extraindo a primeira letra utilizando o index
+++++
+
+Além da remoção de caractere também é possível utilizar o método ``strip()`` para extrair apenas uma letra da palavra, basta colocar qual o index da variável você deseja. 
+
+Exemplo:
+
+.. code-block:: python
+   :linenos:
+
+   #Criando uma variável chamada fruta e armazenando o valor de "banana"
+   fruta = "banana"
+
+   #Criando uma variável chamada primeira_letra e extraindo apenas a primeira letra da variável anterior
+   primeira_letra = fruta()[0]
+
+   #Imprimindo a variável fruta_sem_espaço
+   print(primeira_letra)
+
+O resultado será esse:
+
+.. code-block:: python
+   :linenos:
+
+   b
+
+
+02.b.Método ``upper()`` com ``string``
+
+-----
+
+O método ``upper()`` retorna uma string onde todos as letras estão em maiúsculas, símbolos e números são ignorados.
+
+Exemplo:
+
+.. code-block:: python
+   :linenos:
+
+   #Criando uma variável chamada texto e armazenando o valor de "Olá Mundo" 
+   texto = "Olá Mundo" 
+
+   #Criando uma variável chamada texto_2 e armazenando a variável anterior em letra maiúscula
+   texto_2 = texto.upper()
+
+   print(texto_2)
+
+O resultado será esse:
+
+.. code-block:: python
+   :linenos:
+
+   OLÁ MUNDO  
+   
    
  
 03. Número inteiro (``int``)
