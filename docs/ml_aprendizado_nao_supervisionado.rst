@@ -93,11 +93,11 @@ Neste exemplo utilizamos apenas área e preço para agrupar os imóveis, mas é 
    :align: center
    :width: 650
    
-Dentro da tarefa de agrupamento temos alguns algoritmos:
+Dentro da tarefa de agrupamento temos diversos algoritmos sendo esses os mais famosos:
 
 .. image:: images/ML_APNS/algoritmos_agrupamento.png
    :align: center
-   :width: 450
+   :width: 550
 
 Por hora vamos focar no K-means.
 
@@ -114,7 +114,7 @@ Na prática, imagine que possuímos um gráfico relacionando o preço e a área 
 
 .. image:: images/ML_APNS/grupos.png
    :align: center
-   :width: 450
+   :width: 350
 
 Para criar os grupos, o modelo de ML tirou as médias dos valores que possuiam características semelhantes.
 
@@ -126,7 +126,7 @@ Feito isso, será estabelecido que aquela média será justamente o centróide (
 
 .. image:: images/ML_APNS/centroide.png
    :align: center
-   :width: 450
+   :width: 550
 
 Essa tarefa de tirar a média dos valores dos dados será feita para cada grupo, e a quantidade de grupos (centróides) é representada pela letra **K**.
 
@@ -228,7 +228,7 @@ Imagine que nós desenvolvendo um projeto de ciência de dados para agrupar clie
 
 .. image:: images/ML_APNS/k_8.png
    :align: center
-   :width: 450
+   :width: 650
 
 Repare que visualmente falando, já conseguimos notar que a partir de K=4 já não existe uma diferença discrepante entre os grupos. 
 
@@ -236,7 +236,7 @@ E ao somar as distâncias que cada ponto faz do seu cluster e colocarmos em um g
 
 .. image:: images/ML_APNS/k_8_grafico.png
    :align: center
-   :width: 450
+   :width: 650
 
 E que justamente onde K=4 a diferença de características entre os grupos passa a diminuir e a reta do gráfico muda de inclinação, formando um "cotovelo", daí que surge o nome *Elbom Method*.
 
@@ -248,7 +248,7 @@ Matematicamente o Método Cotovelo utiliza a soma das distâncias quadráticas d
 
 .. image:: images/ML_APNS/wcss.png
    :align: center
-   :width: 450
+   :width: 550
 
 
 04.a.III.Matemática
@@ -260,19 +260,19 @@ Portanto é muito importante **deixar todos os dados em uma mesma escala.** E pa
 
 .. image:: images/ML_APNS/mesma_escala.png
    :align: center
-   :width: 450
+   :width: 650
 
 Assim como K-Means o K-NN trabalha calculando a distância de um ponto até o outro (que no caso do K-NN será o centróide)
 
-.. image:: images/ML_APNS/dist_euclidiana.png
+.. image:: images/ML_APNS/dis_euclidiana.png
    :align: center
-   :width: 450
+   :width: 550
 
 Lembrando que existem diferentes tipos de cálculos de distância, e o melhor cálculo irá depender sempre do seu problema de negócio.
 
 .. image:: images/ML_APNS/tipos_distancia.png
    :align: center
-   :width: 450
+   :width: 550
 
 
 Além desse conceito matemático o K-Means também trabalha **com a média**, ou seja, para cada *cluster* (grupo) ele calcula a média de todos os pontos e com isso encontra o melhor posicionamento para o centróide.
