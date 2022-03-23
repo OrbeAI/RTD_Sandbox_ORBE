@@ -4,7 +4,9 @@ Preparando o ambiente
 01.Instalar o Jupyter
 ====
 
-Como a biblioteca de RPA que iremos utilizar (Pyautogui) acessa alguns comandos físicos do computador, como mouse, teclado, tela, etc, não é possível utilizar o Google Colaboratory, para isso veremos como instalar o Jupyter Notebook em nossa Máquina, só seguir o passo a passo:
+Como a biblioteca de RPA que iremos utilizar (Pyautogui) acessa alguns comandos físicos do computador, como mouse, teclado, tela, etc, não é possível utilizar o Google Colaboratory, pois ele roda em um servidor.
+
+Para isso veremos como instalar o Jupyter Notebook para que os códigos rodem em nossa máquina, só seguir o passo a passo:
 
 1.Acesse o site https://www.anaconda.com/
 
@@ -33,7 +35,7 @@ Como a biblioteca de RPA que iremos utilizar (Pyautogui) acessa alguns comandos 
 02.a.Verificando a instalação
 -----
 
-Agora que a Anaconda já está instalada, podemos acessar o Jupyter Notebook, para isso basta:
+Agora que o Anaconda já está instalada, podemos acessar o Jupyter Notebook, para isso basta:
 
 1.Verificar se o prompt de comando anaconda está instalado.
 
