@@ -24,81 +24,163 @@ Caso queira ler mais sobre existe a documentação original: https://pyautogui.r
 01.Comandos da Pyautogui
 ====
 
-01.a.pyautogui.Pause
+01.a.Tempos de espera
 ----
 
-o Comando ``pyautogui.PAUSE = tempo_desejado`` estabelece um tempo de espera entre operações.
+É possível estabelecer alguns tempos de espera para o computador na hora de automatizar as tarefas. Esse tempo de espera é importante para o computador não se atropelar em termos de processamento, esperar uma janela abrir, conseguir acompanhar visualmente o que seu programa está executando.
 
-Para definir qual tempo de espera você deseja, só alterar o *tempo_desejado* por um valor de verdade, como por exemplo ``pyautogui.PAUSE = 0.5``
+Para isso temos as seguintes maneiras:
 
-Esse tempo de espera é importante para o computador não se atropelar em termos de processamento, ou até mesmo para esperar uma janela abrir, etc.
+01.a.I.Comando ``PAUSE``
++++++
 
-01.b.pyautogui.position()
+o Comando ``PAUSE`` vem da biblioteca pyautogui e estabelece um tempo de espera entre operações. Para executá-lo fazemos da seguinte maneira:
+
+.. code-block:: python
+   :linenos:
+   
+   import pyautogui
+   pyautogui.PAUSE = 0.5 
+   
+Neste exemplo estamos definindo um tempo de espera de meio segundo, mas ele pode variar para mais ou para menos, depende da aplicação de seu programa.   
+
+01.a.II.Comando ``sleep``
+++++
+
+Ele é outra forma de definir um tempo de espera entre operações, porém de uma biblioteca chamada time, muito conhecida também. Para executá-lo fazemos da seguinte maneira:
+
+.. code-block:: python
+   :linenos:
+   
+   import time
+   time.sleep(0.5)
+
+Neste exemplo estamos estabelecendo um tempo de espera de meio segundo, esse número pode variar para mais ou para menos, depende da aplicação de seu programa.
+
+
+01.b.Descobrir o tamanho da tela
 ----
 
-Este comando ``pyautogui.position()`` informa a posição do mouse na tela, é um comando muito importante para descobrir qual o valor que iremos indicar para nosso robô seguir ao clicar em algum ícone. 
+Como a biblioteca Pyautogui trabalha com a interface gráfica do computador, as vezes nos deparamos em uma situação onde precisamos saber o tamanho da tela para realizar determinada aplicação. Para isso temos o comando ``size()`` que nos informa qual a resolução da tela em altura (y) e largura (x).
 
-.. image:: images/RPA/position.png
-   :align: center
-   :width: 650
+Para executá-lo fazemos da seguinte maneira:
 
-Lembrando que a posição do mouse varia para diferentes tamanhos de tela.
+.. code-block:: python
+   :linenos:
 
-01.c.pyautogui.size()
-----
-
-Este comando nos informa qual a resolução da tela em altura (y) e largura (x) 
+    import pyautogui
+    pyautogui.size()
+    
+O output (saída) deste código é o tamanho da nossa tela, em altura e largura.
 
 .. image:: images/RPA/size.png
    :align: center
    :width: 650
 
-01.d.pyautogui.press('tecla')
+01.c.Utilizando o teclado
 ----
 
-Este comando faz com aperte a tecla indicada no teclado, fazendo com que seja possível realizar operações com o teclado. 
+01.c.I.Pressionar uma tecla
+++++
 
-01.e.pyautogui.write('texto')
-----
+Ao automatizar tarefas é fundamental conseguir enviar cliques virtuais de teclas do teclado. Para isso temos o comando ``press('tecla')`` que imita o clique na tecla indicada como se fosse uma pessoa executando. 
 
-Este comando permite a escrita de texto de qualquer tipo, como um e-mail, assunto, login, etc.
+Para executá-lo fazemos da seguinte maneira:
 
-01.f.pyautogui.moveTo(x,y)
-----
+.. code-block:: python
+   :linenos:
 
-Com este comando podemos mover o cursor do mouse para as posições indicadas, lembrando que com o comando ``pyautogui.position()`` conseguimos descobrir qual a posição desejada.
-
-.. image:: images/RPA/moveTo.png
-   :align: center
-   :width: 650
-
-01.g.pyautogui.click()
-----
-
-Este comando faz com que seja dado um click com o botão esquerdo do mouse.
-Portanto ao unir o comando ``.moveTo()`` com o ``click()`` podemos mover o cursor do mouse para a localização desejada e realizar o clique do mouse.
+   import pyautogui
+   pyautogui.press('A')
+   
+No código acima estamos realizando o click da tecla 'A', mas poderia ser diversas outras opções, como o 'Delete', ou o 'CapsLock', tudo depende da tarefa que seu computador está executando.
 
 
-01.h.pyautogui.hotkey('tecla_1','tecla_2')
+01.c.II.Pressionar duas ou mais teclas simultaneamente
 ---- 
 
-Este comando nos permite realizar operações de atalho no teclado, como por exemplo copiar ("ctrl + c") e colar ("ctrl + v") 
+É normal no dia a dia mexendo em um computador se deperar com comandos chamados de *hotkeys* que são nada mais que atalhos para tarefas do dia a dia, como por exemplo o copiar ("ctrl + c") e colar ("ctrl + v"). Para isso na biblioteca Pyautogui temos o comando  ``hotkey('tecla_1','tecla_2')``, basta substituir pelas teclas desejadas. 
 
-Basta substituir pelas teclas desejadas. 
 
-.. image:: images/RPA/hotkey.png
-   :align: center
-   :width: 650
+.. code-block:: python
+   :linenos:
 
-01.i.time.sleep(tempo_desejado) 
+   import pyautogui
+   pyautogui.hotkey('ctrl','c')
+
+
+01.c.III.Escrever texto
+++++
+
+Ao automatizar tarefas é muito importante conseguir preencher "textos", seja para realizar o login em algum site, escrever um e-mail, digitar um site, etc. Para isso temos o comando ``write()`` que nos permite a escrita de texto.
+
+Para executá-lo fazemos da seguinte maneira:
+
+.. code-block:: python
+   :linenos:
+
+   import pyautogui
+   pyautogui.write('texto desejado aqui')
+
+No exemplo acima estamos indicando para que seja escrito 'texto desejado aqui', porém isso irá variar dependendo da aplicação de seu código.
+
+
+
+01.d.Trabalhando com o mouse
 ----
 
-Este não é um comando da biblioteca pyautogui, mas também é muito importante para a execução de tarefas de automação.
+01.d.I.Descobrir a posição do mouse na tela
+++++
 
-Ele é outra forma de definir um tempo de espera entre operações, muito importante para não sobrecarregar o processador do computador, ou para esperar uma página carregar, etc. 
+A interface gráfica da tela trabalha como um gráfico, com os eixos y (altura) e x (largura). Ao escrever programas de automação utilizando a biblioteca Pyautogui é muito importante descobrir qual a posição que seu mouse se encontra na hora de fechar uma janela, clicar em um ícone, enviar uma mensagem, etc.
 
-Basta substituir o valor dentro do parênteses pelo tempo de espera desejado
 
-.. image:: images/RPA/time.png
+Para isso temos o comando ``position()`` que informa a posição do mouse na tela. Para executá-lo fazemos da seguinte maneira:
+
+.. code-block:: python
+   :linenos:
+   
+   import pyautogui
+   pyautogui.position()
+   
+O output (saída) deste comando será justamente a posição do ponto que seu mouse se encontra, podendo variar, dependendo da localização. Lembrando que a posição do mouse varia para diferentes tamanhos de tela.
+
+.. image:: images/RPA/position.png
    :align: center
    :width: 650
+
+
+01.d.II.Mover o cursor do mouse
+++++
+
+Uma vez com as posições do mouse descobertas com o comando ``position()`` é preciso conseguir mover o cursor do mouse para elas. Para isso temos o comando ``moveTo(x,y)``, onde será substituído no lugar de x e y os valores descobertos anteriormente.
+
+Para executá-lo fazemos da seguinte maneira:
+
+.. code-block:: python
+   :linenos:
+
+   import pyautogui
+   pyautogui.moveTo(428,247)
+
+No exemplo acima estabelecemos que é para mover o cursos do mouse para a posição 428(x),247(x) porém essa posição pode variar dependendo da sua aplicação, tamanho da tela, etc.
+
+
+01.d.III. Executar um click com o Mouse
+++++
+
+Praticamente qualquer aplicação que desejamos fazer no computador é necessário que se tenha o click do botão esquerdo do mouse. 
+
+Porém sempre ao automatizar tarefas, busque maneiras de como realizá-las utilizando apenas o teclado. Assim você não fica tão dependente da posição do mouse na tela e de toda vez que trocar de tamanho de tela atualizar seu código, dessa forma, criando um código mais genérico e independente.
+
+Mas caso o click do botão esquerdo do mouse seja essencial para sua tarefa, existe o comando ``click()``. 
+Portanto ao unir o comando ``.moveTo()`` com o ``click()`` podemos mover o cursor do mouse para a localização desejada e realizar o clique do mouse.
+Para executá-lo fazemos da seguinte maneira:
+
+.. code-block:: python
+   :linenos:
+
+   import pyautogui
+   pyautogui.click()
+
+
