@@ -11,7 +11,15 @@ Antes de entrarmos na parte prática da automação, vamos entender alguns conce
 
 A primeira vez que o termo *Robot* surgiu foi na peça de teatro R.U.R de 1920 do autor Karel Capek.
 
+.. image:: images/RPA/RUR.png
+   :align: center
+   :width: 550
+
 A sigla R.U.R na tradução seria Robotas Universais de Rossum, a peça consiste em uma fábrica onde se construiam clones (humanóides) que tinha a função de servir os humanos reais.
+
+.. image:: images/RPA/rur_play.png
+   :align: center
+   :width: 550
 
 Daí que surge o termo **Robota**, remetendo ao **trabalho forçado** (repetitivo e pouco produtivo) que os clones eram obrigados a realizar.
 
@@ -19,12 +27,12 @@ Daí que surge o termo **Robota**, remetendo ao **trabalho forçado** (repetitiv
    :align: center
    :width: 550
 
-Portanto de acordo com a origem da palavra quando falamos em "construir um robô" para determinada atividade, no fundo estamos falando em colocar o computador para executar um trabalho forçado (repetitivo e pouco produtivo) para nós.
+Portanto de acordo com a origem da palavra quando falamos em "construir um robô" para determinada atividade, no fundo estamos falando em colocar o computador para executar um trabalho forçado (repetitivo e pouco produtivo) para nós. 
 
 02.O que é RPA
 ====
 
-Com o passar dos anos a palavra robô ganhou um novo contexto.
+Com o passar dos anos a palavra robô ganhou um novo contexto, como por exemplo o robô (feito em python) de hoje em dia tmabém é chamado de BOT.
 Hoje quando falamos em RPA na área da tecnologia nos referimos a um conjunto de bots para automatização de processos repetitivos.
 
 Com isso podemos realizar diversas atividades como preenchimento, extração, transformação e carregamento de dados. Geração de relatóriosm criação de dashboards, envio de e-mails, chatbots, posts em redes sociais, mineração e raspagem de dados. 
@@ -89,7 +97,7 @@ Através de toda a história da humanidade tivemos diversos momentos de genialid
 
 A maioria das descobertas feitas por inventores ao redor do mundo foram em momentos de relaxamento, que, ao se desligar das tarefas repetitivas do dia a dia e relaxarem puderam deixar a criatividade rolar e resolver seus problemas. 
 
-.. image:: images/RPA/genios.png
+.. image:: images/RPA/genioss.png
    :align: center
    :width: 450
 
