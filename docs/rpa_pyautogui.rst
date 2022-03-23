@@ -97,7 +97,7 @@ No código acima estamos realizando o click da tecla 'A', mas poderia ser divers
 
 
 01.c.II.Pressionar duas ou mais teclas simultaneamente
----- 
+++++
 
 É normal no dia a dia mexendo em um computador se deperar com comandos chamados de *hotkeys* que são nada mais que atalhos para tarefas do dia a dia, como por exemplo o copiar ("ctrl + c") e colar ("ctrl + v"). Para isso na biblioteca Pyautogui temos o comando  ``hotkey('tecla_1','tecla_2')``, basta substituir pelas teclas desejadas. 
 
