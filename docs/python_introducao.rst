@@ -1,270 +1,356 @@
 Introdução
-*******
+********************
 
-01.O que é Pandas
-=========
+01.”Olá, mundo!”
+=================
 
-01.a.Descrição sobre Pandas
-------
+Talvez a primeira coisa que aprendemos a fazer quando começamos a estudar uma linguagem de programação é imprimir a frase “Hello, world!” (“Olá, mundo!”).
 
-•	Pandas é uma biblioteca em Python para trabalhar com dados, como por exemplo nas seguintes etapas do roteiro de um projeto de dados:
-
-.. image:: images/pandas/projeto_de_dados.png
-   :align: center
-   :width: 450
-
- 
-Compreender os dados
-+++++++++
-
-•	Explorar
-•	Analisar
-
-Preparar os dados para algoritmos de aprendizagem
-+++++++++
-
-•	Limpar
-•	Adequar
-
-
-01.b.Importando o Pandas
--------
-
-Para importarmos o Pandas para o Jupyter Notebook usamos o comando import. Como iremos escrever a palavra Pandas muitas vezes ao longo do código, é muito comum apelidarmos a biblioteca para um nome menor pd com o uso do comando as.
-Como importar o Pandas para o Jupyter Notebook e apelidar de pd.
-
-.. code-block:: python
-   :linenos:
-   
-   import pandas as pd
-
-02.DataFrame
-====
-
-02.a.O que é um DataFrame
---------
-
-•	É um objeto da biblioteca Pandas.
-•	É uma estrutura de dados em forma de tabela composta por linhas e colunas.
-•	Traduzindo para a português DataFrame seria um “Quadro de dados”.
-
-
-02.b.Anatomia de um DataFrame
--------
-
-.. image:: images/pandas/anatomia_dataframe.png
-   :align: center
-   :width: 600
-
-DATASET (conjunto de dados)
-+++++++++
-
-•	É o conjunto de dados que compõe o DataFrame.
-
-Linhas
-+++++++++
-
-•	São as linhas com os dados das respectivas colunas.
-•	Também podem ser chamada de:
-•	Entrada, instância e observação.
-
-Colunas
-+++++++++
-
-•	São as colunas com os dados das características do dataset.
-•	Também pode ser chamada de:
-•	Variáveis ou atributos.
-
-Índice
-+++++++++
-
-•	É uma espécie de coluna criada junto com o DataFrame para indicar a posição de cada linha. Repare que o índice começa a sua contagem a partir do 0 (zero) e não a partir do 1.
-Observação: repare que em uma linha podemos ter diferentes tipos de dados, mas em uma coluna geralmente temos apenas um tipo de dado.
-
-
-03.Criando um DataFrame
-=========
-
-Basicamente há duas formas de se criar um DataFrame, uma a partir de poucos dados e outra com muitos dados.
-
-03.a.Criando um DataFrame com poucos dados
--------
-
-Para isso usamos o comando DataFrame( ) do Pandas, junto com os dados, para criar o objeto DataFrame. Como por exemplo usar uma estrutura de dados como o dicionário.
-
-Criar o dicionário
-++++++
-
-.. code-block:: python
-   :linenos:
-   
-   dados_da_corrida = {'Distância':[4,3,5,7],'Duração':[38,27,46,65]}
-
-Criar o DataFrame
-++++++
-
-.. code-block:: python
-   :linenos:
-   
-   df_dic = pd.DataFrame(dados_da_corrida)
-
-
-Imprimir o DataFrame
-++++++
+Para isso usamos o comando ``print("Texto a ser impresso aqui")``.
 
 .. code-block:: python
    :linenos:
 
-   print(df_dic)
+   print("Olá, mundo!")
    
 **Este é o resultado:**
-
-.. image:: images/pandas/df_dic.png
-   :align: center
-   :width: 450
-
-
-03.b.Criando um DataFrame a partir de um dataset
-------
-
-Para criar um (objeto) DataFrame a partir de um dataset (conjunto de dados) precisamos seguir os seguintes passos:
-
-Primeiro: colocar o dataset no projeto
-++++++++++++
-
-•	Ir em arquivos na aba lateral do Google Colaboratory.
-
-.. image:: images/pandas/arquivos_colaboratory.png
-   :align: center
-   :width: 450
- 
-•	Arrastar o dataset para a parte de arquivos.
-
-.. image:: images/pandas/arrastar_planilha.png
-   :align: center
-   :width: 450
- 
-•	Clicar com o botão direito em cima da planilha e depois em “copiar caminho” ou “copy path”.
-
-.. image:: images/pandas/copiar_caminho.png
-   :align: center
-   :width: 450
- 
-•	Substituir o “endereço do arquivo” pelo caminho copiado.
    
-.. image:: images/pandas/copiar_caminho_resultado.png
-   :align: center
-   :width: 450
+.. code-block:: python   
+   
+   >>> Olá, mundo!
+   
+   
+01.a.Comentários no código.
+-------------
+
+Em Python alguns caracteres são especiais e tem uma funcionalidade específica. 
+
+O primeiro que veremos é o ``#``. Quando começamos uma linha com o caracter “#” o texto não é interpretado pelo computador e fica com uma cor diferente do código.
+
+Isto é um comentário, ou seja, um pedaço do texto que deixamos dentro do código para que outras pessoas (ou nós mesmos no futuro) possam entender melhor o que estamos fazendo ao longo do código.
+
+
+.. code-block:: python
+   :linenos:
+   
+   #Isto é um comentário
+   
+   
+   
+02.Variáveis
+===================
+
+**Variável é como se fosse uma gaveta na memória do computador.**
+
+Quando armazenamos camisetas, vamos na frente da gaveta e colocamos uma etiqueta com o nome do conteúdo armazenado (no caso “roupa”).
+
+Mas o conteúdo, ou seja, o valor armazenado pode variar, por isso o nome “variável”.
+
+Ex: tiramos as camisetas e colocamos calças.
+
+**Em programação uma variável armazena um valor**, que pode ser inúmeras coisas, desde texto, números, resultados de contas e etc.
+Uma variável é criada na primeira vez que um valor é armazenado nela.
+
  
-Segundo: usar os métodos do Pandas para ler o arquivo
-++++++++++++
+02.a.Nomenclatura de variáveis.
+----------------
 
-•	``read_excel("endereço do arquivo")`` -> para ler arquivos do tipo planilha Excel.
+Geralmente as variáveis podem ter **nomes bem curtos** como **x, y, i** ou nomes descritivos como **idade, nome, resultado**, etc.
 
-•	``read_csv("endereço do arquivo")`` -> para ler arquivos do tipo csv.
+Em Python precisamos seguir algumas regras para criar nomes para as variáveis:
 
-•	Criar o objeto a partir do operador de atribuição -> ``=``
+- Nome de variáveis são *case sensitive* (ou seja, **nome** e **Nome** são duas variáveis diferentes).
+- Nome de variáveis não pode começar por um número (Ex: 2022_vendas).
+- Nome de variável tem que começar com uma letra ou sublinhado/*underscore* (Ex: **nome, _nome**).
+- Nome de variável não pode conter espaço (Ex: **nome cliente**).
+
++------------------+--------+------------------------------------------------------------------------+
+| Nome da Variável | Válido |                               Comentários                              |
++------------------+--------+------------------------------------------------------------------------+
+|        a3        |   SIM  | Python permite que uma variável contenha números, porém não no começo. |
++------------------+--------+------------------------------------------------------------------------+
+|       idade      |   SIM  |                        Nome formado por letras.                        |
++------------------+--------+------------------------------------------------------------------------+
+|      idade90     |   SIM  |                   Nome formado por letras e números.                   |
++------------------+--------+------------------------------------------------------------------------+
+|   salario_medio  |   SIM  |              O símbolo _ é permitido e facilita a leitura.             |
++------------------+--------+------------------------------------------------------------------------+
+|   salario medio  |   NÃO  |                   Variáveis não podem conter espaços.                  |
++------------------+--------+------------------------------------------------------------------------+
+|        _b        |   SIM  |                  O símbolo _ é permitido em variáveis.                 |
++------------------+--------+------------------------------------------------------------------------+
+|        2a        |   NÃO  |                Variáveis não podem começar com números.                |
++------------------+--------+------------------------------------------------------------------------+
+
+
+
+02.b.Criando uma variável.
+----------------
+
+Para criarmos uma variável usamos o símbolo de igualdade ``=`` entre o nome da variável e o valor que queremos armazenar. Chamaremos essa operação de atribuição, na qual um valor é atribuido a uma variável. 
+
+Portanto em programação o símbolo de igualdade ``=`` é chamado de **operador de atribuição**.
+
+Por exemplo:
+
+.. code-block:: python
+   :linenos:
+   
+   #Criando uma variável chamada idade
+   idade = 33  
+   
+No código acima:
+
+- ``idade`` é o **nome da variável**
+- ``=`` é o **operador de atribuição**
+- ``33`` é o **valor armazenado na variável**
+
+
+
+02.c.Observações.
+----------------
+
+Repare que na programação, o sinal de igual da matemática é chamado de **operador de comparação** e é escrito desta forma ``==``.
 
 Exemplo:
 
 .. code-block:: python
    :linenos:
    
-   df = pd.read_excel(“endereço do arquivo”)
-   
-.. code-block:: python
-   :linenos:
-
-   print(df)
+   #Comparando o valor da variável idade com o valor 33
+   idade == 33
    
 **Este é o resultado:**
 
-.. image:: images/pandas/print_df.png
-   :align: center
-   :width: 450
+.. code-block:: python
+
+   >>> True
+   
+Mas por enquanto não se preocupe com ele, falaremos sobre ele mais adiante.
+
+
+03.Comando ``print( )`` com variáveis.
+===================
+
+Para exemplificar o porque utilizar o comando ``print( )`` com variáveis pense no seguinte código:
+
+.. code-block:: python
+   :linenos:
+   
+   #Criando uma variável "a" e atribuindo o valor de 4
+   a = 4
+   
+   #Criando uma variável "b" e atribuindo o valor de 3
+   b = 3
+   
+   #Exibindo a soma da variável "a" com "b" usando o comando print( )
+   print(a + b)
+   
+**Este é o resultado:**
+
+.. code-block:: python
+
+   >>> 7 
+
+Você pode se perguntar:
+*Por que criar duas variáveis "a" e "b" para somar dois números?*
+
+Poderíamos obter o resultado da mesma forma com o código: 
+
+.. code-block:: python
+   :linenos:
+   
+   #Imprimindo a soma dos valores 4 e 3
+   print(4 + 3)
+
+**Este é o resultado:** 
+
+.. code-block:: python
+
+   >>> 7 
+   
+Ou simplificando mais ainda, poderíamos apenas pedir para imprimir o valor 7:
+   
+.. code-block:: python
+   :linenos:
+   
+   #Imprimindo o valor 7
+   print(7)
+   
+**Este é o resultado:**
+
+.. code-block:: python
+
+   >>>7
+   
+Escolhemos usar variáveis para mostrar uma grande diferença entre resolver um problema no papel e no computador:
+
+1. **Programar é descrever passos para a solução do problema**, portanto é aconselhável descrever os passos de forma que consiga alterá-los com facilidade e mais importante, que possa **entendê-los depois**.
+
+2. Quando se escreve ``print(4 + 3)`` o problema foi a soma de 4 e 3, se precisar mudar alguma parte desse problema, irá precisar escrever outro programa. 
+
+3. Quando se escreve ``print(7)`` não se descreve nenhum problema em si, portanto não existe um passo a passo para a solução de nenhum problema. 
+
+**A diferença está na clareza da representação do nosso problema**.
+
+Portanto sempre escreva seus programas de forma a que seus códigos sejam limpos, organizados e minuciosos. 
+
+Caso ainda não tenha ficado claro, veja na prática este exemplo, pense no seguinte programa para calcular o aumento de salário:
+
+.. code-block:: python
+   :linenos:
+   
+   #Programa para cálcular de aumento de salário
+   
+   #Criando a variável "salario"
+   salario = 1500
+   
+   #Definindo o valor do aumento em %
+   aumento = 5
+   
+   #Imprimindo o valor da soma do salario com o aumento.
+   print(salario + (salario * aumento / 100))
+   
+**Este é o resultado:**
+
+.. code-block:: python   
  
-04.Comandos básicos com DataFrame
-========
+   >>> 1575
+   
+No problema anterior, é possível alterar o valor das variáveis ``salario`` ou ``aumento`` sem que precise reescrever o programa inteiro, dessa forma pode-se utilizar o código para outro salário e outro aumento. 
 
-04.a.Visualizando o DataFrame
------------
+03.a.Como usar uma variável com o comando ``print()``.
+----------------
 
-A forma mais comum de visualizar o DataFrame é usar o comando head() que nos mostra as primeiras linhas do DataFrame.
-Por padrão, o método ``head()`` mostra as primeiras cinco linhas, mas caso desejamos mais, basta informar a quantidade dentro dos parênteses do método.
+Agora que já entendemos porque utilizarmos o comando ``print( )`` com variáveis, veremos como fazer isso na prática.
+
+Para imprimirmos o valor de uma variável com o comando ``print( )``, basta adicionarmos a variável dentro dos parênteses do comando.
+
 Exemplo:
 
 .. code-block:: python
    :linenos:
 
-   df.head()
+   #Criando uma variável chamada "primeiro_nome"
+   primeiro_nome = "Rafael"
    
-**Este é o resultado:**
-   
-.. image:: images/pandas/df_head.png
-   :align: center
-   :width: 600
+   #Usando o comando print( ) para imprimir o valor da variável "primeiro_nome"
+   print(primeiro_nome)
  
-Para visualizarmos somente os dados de uma coluna específica do DataFrame basta indicar o nome da coluna como a seguir.
-
-
-Exemplo:
-
-Quando o nome da coluna possui espaços entre palavras.
-
-.. code-block:: python
-   :linenos:
-
-   df[‘HORA RETIRADA’].head()
-
 **Este é o resultado:**
 
-+---+---+
-| 0 | 5 |
-+---+---+
-| 1 | 5 |
-+---+---+
-| 2 | 5 |
-+---+---+
-| 3 | 5 |
-+---+---+
-| 4 | 5 |
-+---+---+
+.. code-block:: python 
 
-Quando não há espaços entre as palavras do nome da coluna.
-
-.. code-block:: python
-   :linenos:
-
-   df.HORA_RETIRADA.head()
+   >>> Rafael
    
-**Este é o resultado:**   
+03.b.Usando mais que uma variável com o comando ``print( )``.
+----------------
 
-+---+---+
-| 0 | 5 |
-+---+---+
-| 1 | 5 |
-+---+---+
-| 2 | 5 |
-+---+---+
-| 3 | 5 |
-+---+---+
-| 4 | 5 |
-+---+---+ 
- 
-04.b.Formato do DataFrame
---------
+Em uma frase com mais de uma variável podemos utilizar o comando ``format``.
 
-Para entendermos o formato do DataFrame, ou seja, a quantidade de linhas e colunas, usamos a propriedade ``shape``.
+O comando ``format( )`` formata um valor para o formato de texto e o insere dentro de um marcador de posição *(placeholder)*.
+
+O marcador de posição é definido usando colchetes ``{ }``.
+
 Exemplo:
 
 .. code-block:: python
    :linenos:
 
-   df.shape
+   #Criando uma variável chamada "primeiro_nome"
+   primeiro_nome = "Rafael"
    
-**Este é o resultado:**
-
+   #Criando uma variável chamada "idade"
+   idade = 33 
+   
+   #Usando o comando format( ) com o comando print( )
+   print("Meu nome é {} e eu tenho {} anos".format(primeiro_nome, idade)) 
+ 
+**Este é o resultado:** 
 
 .. code-block:: python
+
+   >>> Meu nome é Rafael e eu tenho 33 anos
    
-   >>> (23759, 9)
+   
+   
+03.b.I.Diferentes formas de usar valores no marcador de posição.
++++++++++++++++++++++
+
+Quando temos muitas variáveis, podemos usar **índices dentro dos marcadores de posição** para nos ajudar a organizar com o comando ``format( )``.
+
+Por exemplo:
+
+
+**03.b.I.Marcador de posição vazio**
+
+.. code-block:: python
+   :linenos:
+   
+   #01.Marcador de posição vazio
+   print("Meu nome é {} e eu tenho {} anos".format(primeiro_nome, idade)) 
+   
+
+
+**Este é o resultado:** 
+
+.. code-block:: python
+
+   >>> Meu nome é Rafael e eu tenho 33 anos
+ 
+ 
+______________________________________________________________________________________________________
+ 
+ 
+**03.b.I.Marcador de posição com índices numéricos**
+ 
+.. code-block:: python
+   :linenos:
+   
+   #02.Marcador de posição com índices numéricos
+   print("Meu nome é {0} e eu tenho {1} anos".format(primeiro_nome, idade)) 
+
+
+**Este é o resultado:** 
+
+.. code-block:: python
+
+   >>> Meu nome é Rafael e eu tenho 33 anos
+
+________________________________________________________________________________________________________
+  
+
+**03.b.I.Marcador de posição com índices nomeados**
+
+.. code-block:: python
+   :linenos:
+   
+   #03.Marcador de posição com índices nomeados
+   print("Meu nome é {nome_indice_01} e eu tenho {nome_indice_02} anos".format(nome_indice_01 = primeiro_nome, nome_indice_02 = idade)) 
+
+
+**Este é o resultado:**
+
+.. code-block:: python
+
+   >>> Meu nome é Rafael e eu tenho 33 anos
+
+
+03.b.II.Método f-Strings
+++++
+
+``f-Strings`` é um novo método criado na versão 3.6 do Python para substituir o método ``format()``.
+
+Ele funciona como o método ``format()`` porém com uma sintaxe abreviada e permite operações mais complexas.
+
+Exemplo:
+
+.. code-block:: python
+   :linenos:
+
+   #Criando uma variável chamada idade e outra chamada nome
+   nome = "Rafael" 
+   idade = 33
+
+   #Utilizando o método f ao invés do format
+  print(f"Meu nome é {nome} e eu tenho {idade} anos.") 
