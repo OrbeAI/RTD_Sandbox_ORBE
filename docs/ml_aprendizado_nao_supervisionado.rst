@@ -6,13 +6,13 @@ Aprendizado não supervisionado
 
 .. image:: images/ML_APNS/aprendizado_nsp.png
    :align: center
-   :width: 450
+   :width: 550
 
 Diferente do aprendizado supervisionado, no aprendizado não supervisionado **não** se trabalha com atributo alvo, ou seja, não tem uma classe para predizer. 
 
 .. image:: images/ML_APNS/aprendizado_nsp2.png
    :align: center
-   :width: 450
+   :width: 350
 
 Dessa forma é possível que se possa entender e descrever os dados, entender a relação entre eles e tirar insghts poderosos.
 
@@ -30,7 +30,7 @@ Imagine que você possui um Data Frame de uma loja de roupa com sete atributos d
 
 .. image:: images/ML_APNS/data_frame.png
    :align: center
-   :width: 450
+   :width: 550
 
 Ao colocar esse Data Frame em um gráfico, cada coluna irá representar uma dimensão (2D, 3D, etc), por isso **ao reduzir as colunas, estamos reduzindo as dimensões**. 
 
@@ -38,13 +38,13 @@ Nesse momento é importante entender qual problema de negócio você quer atacar
 
 .. image:: images/ML_APNS/data_frame_2.png
    :align: center
-   :width: 450
+   :width: 550
 
 Assim, ao reduzir os atributos descritores que não fazem sentido para seu projeto, terá um aumento da acurácia de seu modelo de ML não supervisionado 
 
 .. image:: images/ML_APNS/data_frame_3.png
    :align: center
-   :width: 450
+   :width: 350
 
 03.Regras de associação
 ====
@@ -74,7 +74,7 @@ Essas regras de associação são muito utilizadas por sistemas de recomendaçã
 
 .. image:: images/ML_APNS/agrupamento.png
    :align: center
-   :width: 450
+   :width: 550
 
 Uma das tarefas do aprendizado não supervisionado é a de agrupamento, que consiste em descrever os dados **criando grupos** com características similares. 
 
@@ -91,4 +91,4 @@ Neste exemplo utilizamos apenas área e preço para agrupar os imóveis, mas é 
 
 .. image:: images/ML_APNS/varios_atributos.png
    :align: center
-   :width: 450
+   :width: 650
