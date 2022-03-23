@@ -11,13 +11,13 @@ Antes de entrarmos na parte prática da automação, vamos entender alguns conce
 
 A primeira vez que o termo *Robot* surgiu foi na peça de teatro R.U.R de 1920 do autor Karel Capek.
 
-.. image:: images/RPA/RUR.png
+.. image:: images/RPA/RUR.jpg
    :align: center
    :width: 550
 
 A sigla R.U.R na tradução seria Robotas Universais de Rossum, a peça consiste em uma fábrica onde se construiam clones (humanóides) que tinha a função de servir os humanos reais.
 
-.. image:: images/RPA/rur_play.png
+.. image:: images/RPA/rur_play.jpg
    :align: center
    :width: 550
 
