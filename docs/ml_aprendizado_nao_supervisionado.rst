@@ -137,15 +137,15 @@ Essa tarefa de tirar a média dos valores dos dados será feita para cada grupo,
 
 Algumas aplicações de mercado que podemos realizar com a tarefa de agrupamento são:
 
-01.Segmentação de mercado: 
+**01.Segmentação de mercado:** 
 
    Ao compreender melhor seus dados e separá-los em grupos, é possível criar uma estratégia de marketing personalizada.
 
-02.Sistema de recomendação:
+**02.Sistema de recomendação:**
 
    Ao possuir grupos que descrevem seus dados, para cada novo usuário que entrar no site será possível identificar suas características e recomendar produtos do grupo que ele pertence.
 
-03.Otimização de rotas:
+**03.Otimização de rotas:**
 
    Levando em consideração a localização de cada cliente, qual seria o melhor lugar para abrir uma loja, para que o preço e o tempo de frete seja o menor possível
 
@@ -153,7 +153,7 @@ Algumas aplicações de mercado que podemos realizar com a tarefa de agrupamento
    :align: center
    :width: 450  
 
-04.Sistema de Machine Learning:
+**04.Sistema de Machine Learning:**
 
    Outra possível aplicação é utilizar o modelo de agrupamento com outros modelos de ML também, como regressão linear por exemplo. 
    Imagine que ao separar seus dados em grupo você irá treinar um modelo de regressão linear para cada grupo, isso pode aumentar a assertividade de cada modelo. 
