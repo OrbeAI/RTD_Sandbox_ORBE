@@ -1,11 +1,25 @@
 Pyautogui
 ****
 
-A biblioteca Pyautogui é uma biblioteca da linguagem Python que utiliza recursos da interface gráfica como posição da tela e também recursos como clique do mouse e botões do teclado.
+Conhecer várias bibliotecas em Python para editar planilhas, criar aplicativos, gerar gráficos é útil, mas às vezes não existem bibliotecas para os aplicativos com os quais você precisa trabalhar.
 
-Dessa forma é possível criar tarefas automatizadas com ela, caso queira ler mais sobre existe a documentação original.
+As ferramentas definitivas para automatizar tarefas em seu computador são programas que você escreve e que controlam diretamente o teclado e o mouse. 
 
-https://pyautogui.readthedocs.io/en/latest/
+Esses aplicativos podem controlar outros aplicativos enviando-lhes teclas virtuais e cliques do mouse, como se você estivesse sentado em seu computador e interagindo com os aplicativos por conta própria.
+
+Essa técnica é conhecida como automação de interface gráfica do usuário ou *GUI automação*, para abreviar.
+
+Para trabalhar controlando os cliques do mouse e do teclado em Python nós temos uma biblioteca chamada **PyAutoGui**. Ela possui seu nome pois: 
+
+* Py = Python
+
+* Auto = Automatização
+
+* GUI = Graphical User Interface (interface gráfica do usuário) .
+
+Portanto a biblioteca Pyautogui é uma biblioteca da linguagem Python para automatizar tarefas que utilizam a interface gráfica do usuário.
+
+Caso queira ler mais sobre existe a documentação original: https://pyautogui.readthedocs.io/en/latest/
 
 01.Comandos da Pyautogui
 ====
