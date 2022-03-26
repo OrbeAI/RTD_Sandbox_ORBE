@@ -8,7 +8,7 @@ Para realizarmos a atividade de Web Scraping na prática nós iremos trabalhar n
 
 .. image:: images/web_scrap/selenium.png
    :align: center
-   :width: 450
+   :width: 550
 
 https://selenium-python.readthedocs.io/
 
@@ -26,13 +26,13 @@ Por exemplo, ao clicar F12 em uma tela e encontrar um elemento que deseja copiar
 
 .. image:: images/web_scrap/tres_pontinhos.png
    :align: center
-   :width: 450 
+   :width: 550 
 
 Depois ir em copy e selecionar o caminho desejado. 
 
 .. image:: images/web_scrap/copy.png
    :align: center
-   :width: 450
+   :width: 550
 
 
 .. note:: 
@@ -65,7 +65,7 @@ Uma das possíveis ações é dar o comando de clicar com o mouse, para isso bas
 
 .. image:: images/web_scrap/copy.png
    :align: center
-   :width: 450
+   :width: 550
 
 Imagine que você queira extrair ou coletar algum texto presente em algum elemento. 
 Para isso basta utilziar o comando ``text()``
@@ -84,7 +84,7 @@ Imagine que você está automatizando um robô de scraping em uma página que é
 
 .. image:: images/web_scrap/username.png
    :align: center
-   :width: 450
+   :width: 550
 
 Para realizar o login é preciso enviar digitar suas credenciais para as caixas de "username" e "password".
 
