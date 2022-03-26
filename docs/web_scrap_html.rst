@@ -26,7 +26,7 @@ Toda página disponível na Web possuí um HTML, para verificar qual o HTML da p
 
 .. image:: images/web_scrap/f12.png
    :align: center
-   :width: 450
+   :width: 550
 
 Se analisar bem a imagem acima irá reconhecer as estruturas mencionadas no tópico anterior, como <html>, <head>, <body>, etc.
 
@@ -37,7 +37,7 @@ Repare que é possível interagir com o HTML da página.
 
 .. image:: images/web_scrap/min_max.png
    :align: center
-   :width: 450
+   :width: 550
 
 Algumas estruturas HTML possuem setas que permitem minimizar ou maximizar seu conteúdo, basta clicar neles.
 
@@ -53,7 +53,7 @@ Para identificar itens no HTML é só clicar no botão de seta do mouse no canto
 
 .. image:: images/web_scrap/select.png
    :align: center
-   :width: 450
+   :width: 550
 
 Depois de selecionar o botão, basta percorrer a página até selecionar o objeto que você quer identificar no página.
 
