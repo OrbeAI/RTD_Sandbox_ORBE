@@ -20,7 +20,7 @@ Ou utilizar para executar ações como fazer um login, clicar em algum botão as
 
 .. image:: images/web_scrap/historico.png
    :align: center
-   :width: 200
+   :width: 700
 
 
 
@@ -44,9 +44,9 @@ Como muitas pessoas já estavam conectadas na Web e os hardwares para armazename
 
 Depois durante 1994-2003 o Web Scraping foi deixado de lado pois poucas pessoas estavam preocupadas em coletar dados. Estavam mais preocupadas em lançar seus sites, produtos e se tornar uma marca visivelmente forte na Web.
 
-.. image:: images/web_scrap/historico.png
+.. image:: images/web_scrap/BeautifulSoup.png
    :align: center
-   :width: 200
+   :width: 450
 
 Até então que em 2004 foi criado a BeautifulSoup, uma biblioteca em Python que faz uma varredura em todo o HTML.
 
@@ -68,7 +68,7 @@ Ao pesquisarmos o termo Web Scraping podemos verificar que desde 2004 até os di
 
 .. image:: images/web_scrap/google_trends.png
    :align: center
-   :width: 200
+   :width: 450
 
 E essas pesquisas ocorrem principalmente no eixo tecnológico do mundo, Índia, Paquistão, Bangladesh, etc.
 
