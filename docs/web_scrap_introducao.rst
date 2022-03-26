@@ -44,7 +44,7 @@ Como muitas pessoas já estavam conectadas na Web e os hardwares para armazename
 
 Depois durante 1994-2003 o Web Scraping foi deixado de lado pois poucas pessoas estavam preocupadas em coletar dados. Estavam mais preocupadas em lançar seus sites, produtos e se tornar uma marca visivelmente forte na Web.
 
-.. image:: images/web_scrap/BeautifulSoup.png
+.. image:: images/web_scrap/BeautifulSoup.jpg
    :align: center
    :width: 450
 
