@@ -38,6 +38,7 @@ Depois ir em copy e selecionar o caminho desejado.
 .. note:: 
 
    Na documentação da biblioteca selenium existe a explicação de qual forma de caminho é melhor para sua aplicação, mas por via geral sempre que utilizar o XPath é mais garantido.
+   XPath é uma linguagem de consulta que nos ajuda a navegar por documentos que usam marcadores, como os arquivos XML e HTML.
 
 Agora que já temos o elemento copiado basta utilizarmos no código:
 
@@ -86,7 +87,7 @@ Imagine que você está automatizando um robô de scraping em uma página que é
    :align: center
    :width: 550
 
-Para realizar o login é preciso enviar digitar suas credenciais para as caixas de "username" e "password".
+Para realizar o login é preciso digitar suas credenciais para as caixas de "username" e "password".
 
 Justamente para digitar essas credenciais nós temos o comando ``send_keys()``
 
