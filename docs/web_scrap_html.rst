@@ -6,13 +6,21 @@ HTML
 
 
 HTML é uma sigla para *Hypertext Markup Language*, sua tradução é linguagem de marcação por hipertexto.
-Hipertexto é uma linguagem separada por tags, como por exemplo na imagem abaixo, cada cor representa uma tag (<html>, <head>, <body>, etc) e o HTML é represetado pela estrutura a seguir:
+Hipertexto é uma linguagem separada por *tags* que são justamente marcações ao longo da linguagem para identificar quando um objeto começa e termina.
+
+.. note::
+
+   No HTML os objetos começam quando se coloca o nome da tag dentro de ``<>``, por exemplo: 
+   ``<html>``, ``<head>``, ``<meta>``.
+
+Na imagem abaixo, cada cor representa uma *tag* (*<html>*, *<head>*, *<body>*, etc) e o HTML é represetado pela estrutura a seguir:
 
 .. image:: images/web_scrap/html.png
    :align: center
    :width: 450
+ 
 
-É uma forma parecida com o markdown do Google Colaboratory ou do GitHub, que serve para estruturar nossa página na web.
+É uma forma parecida com o *markdown* do Google Colaboratory ou do GitHub, que serve para estruturar nossa página na web.
 
 .. note::
 
