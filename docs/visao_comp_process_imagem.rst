@@ -78,7 +78,7 @@ Em cada *pixel*, cada uma destas três cores correspondem a um valor numérico q
 
 .. image:: images/visao_comp/cores.png
    :align: center
-   :width: 550
+   :width: 450
 
 .. note::
 
@@ -141,7 +141,7 @@ Neste exemplo o output será esse:
 
 .. image:: images/visao_comp/print.png
    :align: center
-   :width: 550
+   :width: 450
 
 02.d.Transformar uma imagem para tons de cinza
 -----
@@ -255,7 +255,7 @@ O resultado será esse:
 
 .. image:: images/visao_comp/canto.png
    :align: center
-   :width: 550
+   :width: 350
 
 04.Desenhar em uma imagem
 ====
@@ -406,4 +406,4 @@ Depois de rodar esse código repare que o arquivo já aparece na lateral do Goog
 
 .. image:: images/visao_comp/colab.png
    :align: center
-   :width: 550
+   :width: 350
