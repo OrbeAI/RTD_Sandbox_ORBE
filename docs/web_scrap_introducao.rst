@@ -58,7 +58,7 @@ Até então que em 2004 foi criado a BeautifulSoup, uma biblioteca em Python que
 
 Em 2006 essas ferramentas de Scraping começaram a crescer e explodir no mercado, então começaram a aparecer softwares de Web Scraping e as empresas começaram a entender que  podem extrair informações poderosas para se tornarem mais competitivas no mercado a partir da coleta desses dados. 
 
-E até os dias atuais Web Scraping é muito importante e está muito ligado com a coleta de dados para RPA, Data = New Oil, AI, Hiperautomation.
+E até os dias atuais Web Scraping é muito importante e está muito ligado com a coleta de dados para RPA, e diversas outras aplicações de Inteligência Artificial.
 
 03.Google Trends
 ====
@@ -84,7 +84,7 @@ Web Scraping é um conceito que precisa ser utilizado com *parcimônia* (menos �
 
 Hoje em dia os sites colocam bloqueios para Web Scraping, pois a maneira mais fácil de você fazer um site cair é com uma alta taxa de acesso e solicitações.
 
-Imagine que você desenvolve um robô de Web Scraping que entra no site do governo e faz pesquisa de meio segundo em meio segundo, de diversos ip's, isso acaba derrumando o sistema.
+Imagine que você desenvolve um robô de Web Scraping que entra no site do governo e faz pesquisa de meio segundo em meio segundo, de diversos IPs, isso acaba derrumando o sistema.
 
 Então as empresas começaram a bloquear certos comportamentos de scraping para que não caiam, não haja invasão, etc. 
 É importante ter esses bloqueios no site para segurança, são eles:
