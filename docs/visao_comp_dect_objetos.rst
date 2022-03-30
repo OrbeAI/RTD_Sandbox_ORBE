@@ -25,7 +25,7 @@ Para realizar essa detecção de objetos é preciso executar algumas etapas, sã
 
 .. image:: images/visao_comp/etapas.png
    :align: center
-   :width: 550
+   :width: 750
 
 
 01.Bibliotecas necessárias
@@ -60,7 +60,7 @@ Ao transformar uma imagem em preto e branco, ela fica com apenas um canal, e tod
 
 .. image:: images/visao_comp/um_canal.png
    :align: center
-   :width: 550
+   :width: 650
 
 A partir desses números é possível medir a frequência que eles aparecem e organizar visualmente em um gráfico de histograma.
 
@@ -72,7 +72,7 @@ Neste exemplo vamos medir os tons de cinza da seguinte imagem:
 
 .. image:: images/visao_comp/vit_cc.png
    :align: center
-   :width: 550
+   :width: 350
 
 Para plotarmos um histograma, usaremos a biblioteca **Matplotlib** com o método ``hist( )`` e os seus parâmetros:
 
@@ -114,7 +114,7 @@ Ruídos podem ter diferentes origens como: poeira no ambiente (ou na lente da c�
 
 .. image:: images/visao_comp/filtros_ruido.png
    :align: center
-   :width: 550
+   :width: 750
 
 Existes diferentes tipos de filtros, ou seja *kernels* com diferentes valores. Cada filtro irá originar um efeito diferente.
 
@@ -161,7 +161,7 @@ O filtro de Sobel realça as bordas dos objetos, ou seja, regiões da imagem ond
 
 .. image:: images/visao_comp/sobel.png
    :align: center
-   :width: 550
+   :width: 450
 
 
 Para usarmos o filtro Sobel com o OpenCV, basta usarmos o método ``Sobel()`` e os seus parâmetros:    
@@ -186,7 +186,7 @@ Em nosso exemplo esse é o resultado:
 
 .. image:: images/visao_comp/result_sobel.png
    :align: center
-   :width: 550
+   :width: 450
 
 
 04.b.Detector de bordas *Canny*
@@ -216,7 +216,7 @@ Em nosso exemplo esse é o resultado:
 
 .. image:: images/visao_comp/result_canny.png
    :align: center
-   :width: 550
+   :width: 450
 
 05.Segmentação do objeto
 ====
@@ -255,7 +255,7 @@ Em nosso exemplo este é o resultado:
 
 .. image:: images/visao_comp/result_seg_bin.png
    :align: center
-   :width: 550
+   :width: 450
 
 
 05.b.Realizar contornos nos objetos
@@ -297,7 +297,7 @@ Para realizarmos os contornos do objeto de interessa usamos o método ``findCont
 
 .. image:: images/visao_comp/result_cont.png
    :align: center
-   :width: 550
+   :width: 450
 
 
 .. note::
