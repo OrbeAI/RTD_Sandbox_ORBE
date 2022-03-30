@@ -66,6 +66,15 @@ Material de referência
    ml_treinamento_modelo.rst
    ml_aprendizado_supervisionado.rst
    ml_aprendizado_nao_supervisionado.rst
+
+.. toctree::
+   :caption: VISÃO COMPUTACIONAL
+   :maxdepth: 1
+ 
+   visao_comp_process_imagem.rst
+   visao_comp_dect_objetos.rst
+   visao_comp_haar_cascade.rst
+   
     
 .. toctree::
    :caption: RPA
