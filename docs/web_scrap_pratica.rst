@@ -28,7 +28,7 @@ Por exemplo, ao clicar F12 em uma tela e encontrar um elemento que deseja copiar
    :align: center
    :width: 550 
 
-Depois ir em copy e selecionar o caminho desejado. 
+Depois ir em **Copy** e selecionar o caminho desejado. 
 
 .. image:: images/web_scrap/copy.png
    :align: center
