@@ -9,13 +9,13 @@ Repare que no repositório existem diversos modelos cada um treinado para identi
 
 .. image:: images/visao_comp/model_haar.png
    :align: center
-   :width: 550
+   :width: 650
 
 Para utilizar este modelo Haar Cascade precisa fazer o download do modelo desejado e colocar na aba lateral do Google Collaboratory
 
 .. image:: images/visao_comp/google_haar.png
    :align: center
-   :width: 550
+   :width: 450
 
 No nosso exemplo iremos utilizar a foto abaixo e o modelo ``haarcascade_frontalface_default.xml`` para identificar as faces da imagem.
 
@@ -63,7 +63,7 @@ Basicamente, para cada face encontrada temos uma **lista** com quatro elementos 
 
 ``[posição inicial X, posição inicial Y, largura, altura]``   
    
-.. image:: images/visao_comp/info_faces.jpg
+.. image:: images/visao_comp/info_faces.png
    :align: center
    :width: 550   
   
@@ -92,6 +92,6 @@ Para finalizar vamos desenhar um retângulo em cada face encontrada usando o mé
    #Visualizar imagem
    cv2_imshow(imagem_original)
 
-.. image:: images/visao_comp/faces_ret.jpg
+.. image:: images/visao_comp/faces_ret.png
    :align: center
    :width: 550  
