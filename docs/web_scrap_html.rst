@@ -36,7 +36,7 @@ Toda página disponível na Web possuí um HTML, para verificar qual o HTML da p
    :align: center
    :width: 550
 
-Se analisar bem a imagem acima irá reconhecer as estruturas mencionadas no tópico anterior, como <html>, <head>, <body>, etc.
+Se analisar bem a imagem acima irá reconhecer as estruturas mencionadas no tópico anterior, como *<html>*, *<head>*, *<body>*, etc.
 
 Repare que é possível interagir com o HTML da página.
 
