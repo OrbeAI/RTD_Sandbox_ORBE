@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'ORBE.AI'
-copyright = '2021, Orbe.AI'
+copyright = '2022, Orbe.AI'
 author = 'Orbe.AI'
 
 release = '0.1'
