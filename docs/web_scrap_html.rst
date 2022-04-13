@@ -10,7 +10,7 @@ Hipertexto é uma linguagem separada por *tags* que são justamente marcações 
 
 .. note::
 
-   No HTML os objetos começam quando se coloca o nome da tag dentro de ``<>``, por exemplo: 
+   No HTML os objetos começam quando se coloca o nome da *tag* dentro de ``<>``, por exemplo: 
    ``<html>``, ``<head>``, ``<meta>``.
 
 Na imagem abaixo, cada cor representa uma *tag* (*<html>*, *<head>*, *<body>*, etc) e o HTML é represetado pela estrutura a seguir:
