@@ -15,11 +15,15 @@ Uma função importante que também precisa ser importada é a ``cv2_imshow``, e
 
    #Importar comando cv2_imshow
    from google.colab.patches import cv2_imshow
+   
+.. note:: 
+
+   O comando ``from google.colab.patches import cv2_imshow`` é uma forma de adaptar o OpenCV a rodar no Google Colaboratory, caso esteja utilizando uma *IDE* não é necessário utilizar este comando.
 
 01.a.Importar uma imagem
 -----
 
-Após realizar o upload de uma imagem no Google Collaboratory podemos importá-la para nosso código e começar a trabalhar com ela, igual fazemos com os Datasets.
+Após realizar o *upload* de uma imagem no Google Colaboratory podemos importá-la para nosso código e começar a trabalhar com ela, igual fazemos com os *Datasets*.
 
 Para importar uma imagem usando a biblioteca OpenCV usamos o método ``imread()``
 
@@ -41,13 +45,13 @@ Para mostrar a imagem atribuída a variável ``imagem_ponte``, usamos o método 
    cv2_imshow(imagem_ponte)
 
 
-Este será o output do código:
+Este será o *output* do código:
 
 .. image:: images/visao_comp/imagem_ponte.png
    :align: center
    :width: 550
 
-Que é justamente a imagem que fizemos o upload. 
+Que é justamente a imagem que fizemos o *upload*. 
 
 02.O que é uma imagem
 ====
@@ -64,7 +68,7 @@ A menor parte de uma imagem é chamada de *pixel* e cada imagem é formada por m
 02.b.Cores
 -----
 
-As cores de um *pixel* estão no formato **RGB**, ou seja, a cor de cada **pixel** é uma mistura de três cores **Vermelho**, **Verde**,**Azul** (na sigla em inglês: **RGB** - **R**ed,**G**reen,**B**lue).
+As cores de um *pixel* estão no formato **RGB**, ou seja, a cor de cada **pixel** é uma mistura de três cores **Vermelho**, **Verde**,**Azul** (na sigla em inglês: **RGB** - **R** ed,**G** reen,**B** lue).
 
 .. note::
 
@@ -88,7 +92,7 @@ Em cada *pixel*, cada uma destas três cores correspondem a um valor numérico q
 
 
 Cada cor é chamada de **canal**, portanto nesta imagem temos um total de 3 canais, um para cada cor. 
-Caso a imagem esteja em preto e branco ela terá apenas um canal 
+Caso a imagem esteja em preto e branco ela terá apenas um canal. 
 
 .. image:: images/visao_comp/um_canal.png
    :align: center
@@ -117,7 +121,7 @@ Para visualizarmos o formato de uma imagem usamos a propriedade ``shape``:
    #Mostrar o formato da imagem
    imagem_ponte.shape
 
-O output será justamente a altura, largura e a quantidade de canais, respectivamente.
+O *output* será justamente a altura, largura e a quantidade de canais, respectivamente.
 
 .. code-block:: python
    :linenos:
@@ -137,7 +141,7 @@ Caso queira salvar em variáveis e exibir com o comando ``print()`` pode fazer a
    print("Largura: ", largura)
    print("Quantidade de canais: ", quantidade_de_canais)
 
-Neste exemplo o output será esse: 
+Neste exemplo o *output* será esse: 
 
 .. image:: images/visao_comp/print.png
    :align: center
@@ -148,7 +152,7 @@ Neste exemplo o output será esse:
 
 Ao transformarmos uma imagem colorida para tons de cinza, esta imagem passa a ter apenas um canal de cor, que é justa mente vários tons de cinza que vão desde o valor **0** para a cor preta até **255** para a cor branca. 
 
-Para **converter** uma imagem colorida para uma imagem em tons de cinza, usamos o método **`cvtColor`**, ou seja, "converter para cor". Também usamos os seguintes parâmetros:
+Para **converter** uma imagem colorida para uma imagem em tons de cinza, usamos o método **`cvtColor()`**, ou seja, "converter para cor". Também usamos os seguintes parâmetros:
 
 - **nome da imagem:** ``pedaco_imagem_ponte``
 
@@ -176,7 +180,7 @@ A saída do código será justamente a imagem em tons de cinza:
 ++++
 
 O computador basicamente é uma máquina de fazer contas com números, assim,  ele entende uma imagem como uma matriz.
-- Na matemática, uma matriz nada mais é do que uma forma de armazernarmos valores em linhas e colunas.
+- Na matemática, uma matriz nada mais é do que uma forma de armazenarmos valores em linhas e colunas.
 
 Como a imagem está em tons de cinza, cada elemento desta matriz tem o seu valor numérico correspontente ao tom de cinza (de 0 até 255).
 
@@ -228,14 +232,19 @@ O resultado será esse:
 
 O resultado será esse:
 
-.. image:: images/visao_comp/centro.png
-   :align: center
-   :width: 550
+.. code-block:: python
+   :linenos:
+
+   Tamonho do eixo X: 640
+   Centro do eixo X: 320
+   ----------------------
+   Tamnho do eixo Y: 426
+   Centro do eixo Y: 213
 
 03.a.Cortar uma imagem
 ----
 
-Vamos selecionar uma região da imagem, que é justamente o canto superior esquedo. Para isso temos que informar o início e o fim desta região da imagem.
+Vamos selecionar uma região da imagem, que é justamente o canto superior esquerdo. Para isso temos que informar o início e o fim desta região da imagem.
 - **início**: x=0 e y=0.
 - **fim**: x=centro_x e y=centro_y.
 
@@ -262,7 +271,7 @@ O resultado será esse:
 
 Podemos fazer diferentes desenhos em uma imagem: linhas, retângulos, quadrados, círculos e etc.
 
-Antes de tudo, vamos defini a cor que terá o traçado destes desenhos:
+Antes de tudo, vamos definir a cor que terá o traçado destes desenhos:
 
 .. code-block:: python
    :linenos:
@@ -274,6 +283,7 @@ Antes de tudo, vamos defini a cor que terá o traçado destes desenhos:
 ----
 
 Para desenhar uma linha na imagem, usamos o método ``line( )`` e os seguintes parâmetros:
+
 - **nome da imagem em que desenharemos:** imagem_ponte
 - **local do início da linha:** (x,y)
 - **local do fim da linha:** (x,y)
@@ -325,7 +335,7 @@ O resultado será esse:
 04.c.Círculo
 ----
 
-Para desenharmos um círculo na imagem, usamos o método ``circle( )`v, com os seguintes parâmetros:
+Para desenharmos um círculo na imagem, usamos o método ``circle( )``, com os seguintes parâmetros:
 
 - **nome da imagem a ser desenhada:** imagem_ponte
 - **centro do círculo:** (x,y)
@@ -402,7 +412,7 @@ Para salvar uma imagem, usamos o método ``imwrite( )`` e os seguintes parâmetr
    cv2.imwrite("imagem_ponte_texto.jpg", imagem_ponte)
 
 A saída desse código será ``True`` caso tenha dado certo ou ``False`` caso tenha dado errado.
-Depois de rodar esse código repare que o arquivo já aparece na lateral do Google Collaboratory
+Depois de rodar esse código repare que o arquivo já aparece na lateral do Google Colaboratory
 
 .. image:: images/visao_comp/colab.png
    :align: center
