@@ -4,7 +4,7 @@ Web Scraping na prática
 01. Let's code
 ====
 
-Para realizarmos a atividade de Web Scraping na prática nós iremos trabalhar no Google Collaboratory utilziando a biblioteca selenium:
+Para realizarmos a atividade de *Web Scraping* na prática nós iremos trabalhar no Google Collaboratory utilziando a biblioteca selenium:
 
 .. image:: images/web_scrap/selenium.png
    :align: center
@@ -45,7 +45,7 @@ Agora que já temos o elemento copiado basta utilizarmos no código:
 .. code-block:: python
    :linenos:
 
-   login = driver.find_element_by_xpath("//*[@id="loginForm"]/div/div[3]")
+   login = driver.find_element(By.XPATH, "//*[@id="loginForm"]/div/div[3]")
 
 Dessa maneira já é possível localizar elementos presentes na página da Web
 
@@ -58,7 +58,7 @@ Uma das possíveis ações é dar o comando de clicar com o mouse, para isso bas
 .. code-block:: python
    :linenos:
 
-   login = driver.find_element_by_xpath("//*[@id="loginForm"]/div/div[3]").click()
+   login = driver.find_element(By.XPATH, "//*[@id="loginForm"]/div/div[3]").click()
 
 
 01.c.Copiar texto de algum elemento
@@ -75,7 +75,7 @@ Para isso basta utilziar o comando ``text()``
 .. code-block:: python
    :linenos:
 
-   texto_desejado = driver.find_element_by_xpath("//*[@id="loginForm"]/div/div[5]/button/span[2]").text()
+   texto_desejado = driver.find_element(By.XPATH, "//*[@id="loginForm"]/div/div[5]/button/span[2]").text()
 
 
 01.d.Enviar teclas para o elemento
@@ -96,6 +96,6 @@ Justamente para digitar essas credenciais nós temos o comando ``send_keys()``
 
    nome_usuario = colocar_seu_login
 
-   username = driver.find_element_by_xpath("//*[@id="loginForm"]/div/div[1]/div/label/input")
+   username = driver.find_element(By.XPATH, "//*[@id="loginForm"]/div/div[1]/div/label/input")
 
    username.send_keys(nome_usuario)
