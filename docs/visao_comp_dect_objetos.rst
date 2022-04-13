@@ -1,12 +1,12 @@
 Detecção de objetos
 ****
 
-Sabe quando vamos tirar uma foto com o celular e os rostos da foto ficam com um quadrado verde em volta do rosto?
+Sabe quando vamos tirar uma foto com o celular e os rostos na foto ficam com um quadrado verde em volta do rosto?
 Então, essa é um exemplo de detecção de objetos em uma imagem.
 
 .. note::
 
-   Um objeto é um elemento computacional que representa, no domínio da solução, alguma entidade (abstrata ou concreta).
+   Um objeto pode ser qualquer item que queira identificar em uma foto, por exemplo: uma face, um olho, um carro, etc.
 
 Para realizar essa detecção de objetos é preciso executar algumas etapas, são elas: 
 
@@ -14,7 +14,7 @@ Para realizar essa detecção de objetos é preciso executar algumas etapas, sã
 
 2. Transformar essa imagem colorida em preto e branco, ou seja, transformar de 3 canais para 1 canal
 
-3. Dar uma "suavizada" na nitidez da imagem, alguns detalhes como bordas, etc, podem atrapalhar o computador no processo de detecção de imagem.
+3. Diminuir a nitidez da imagem ao tornar mais sútil algumas regiões da imagens como bordas entre dois objetos, ou seja, a fronteira (borda) que divide o final de um objeto e o início de outro objeto.
 
 4. Detectar as bordas pela grande diferença de intensidade do pixel
 
@@ -32,7 +32,8 @@ Para realizar essa detecção de objetos é preciso executar algumas etapas, sã
 ====
 
 
-Para realizar essa tarefa de detecção de objetos vamos importar as bibliotecas necessárias:     
+Para realizar essa tarefa de detecção de objetos vamos importar as bibliotecas necessárias:  
+
 - **OpenCV:** para trabalharmos com imagens.
 - **Comando `cv2_imshow( )`:** para mostrarmos a imagem.
 - **Numpy:** para trabalharmos com números.
@@ -52,11 +53,11 @@ Para realizar essa tarefa de detecção de objetos vamos importar as bibliotecas
 02.Analisar o histograma de uma imagem.
 ====
 
-Como o passo de como importar uma imagem e transformar em tons de cinza foram passados no tópico anterior vamos direto para a etapa de analisar o histograma de uma imagem.
+Já que o passo de como importar uma imagem e transformar em tons de cinza foram realizados no tópico anterior,  vamos agora direto para a etapa de analisar a histograma de uma imagem.
 
 Histograma é um gráfico que mede a frequência de alguma ocorrência. 
 
-Ao transformar uma imagem em preto e branco, ela fica com apenas um canal, e todas as cores presentes nela estão distribuídas no intervalo de 0 até 255
+Ao transformar uma imagem em preto e branco, ou seja, em tons de cinza, a imagem fica com apenas um canal e todos os tons de cinza são distribuídos entre os valores que partem do 0 (preto) até o 255 (branco).
 
 .. image:: images/visao_comp/um_canal.png
    :align: center
@@ -64,9 +65,10 @@ Ao transformar uma imagem em preto e branco, ela fica com apenas um canal, e tod
 
 A partir desses números é possível medir a frequência que eles aparecem e organizar visualmente em um gráfico de histograma.
 
-Portanto nosso histograma irá medir os valores de pixels de uma imagem.
+Portanto, o histograma irá informar a quantidade de cada valor de pixel na imagem, ou seja, a quantidade de pixels com valor 0, a quantidade de pixels com valor 1,  a quantidade de pixels com valor 2, e assim por diante até a quantidade de pixels com valor 255.
 
 02.a.Plotar o histograma de uma imagem
+------
 
 Neste exemplo vamos medir os tons de cinza da seguinte imagem: 
 
@@ -77,9 +79,19 @@ Neste exemplo vamos medir os tons de cinza da seguinte imagem:
 Para plotarmos um histograma, usaremos a biblioteca **Matplotlib** com o método ``hist( )`` e os seus parâmetros:
 
  - **Imagem:** imagem em tons de cinza.
-    - Repare que é o método ``ravel( )`` que coloca todos os valores dos pixels em um vetor (como se fosse uma lista em Python).
+ 
+    - Repare que é o método ``ravel()`` que coloca todos os valores dos pixels em um vetor (como se fosse uma lista em Python).
+
+.. image:: images/visao_comp/valores_pixels.png
+   :align: center
+   :width: 350
+
+.. image:: images/visao_comp/vetor.png
+   :align: center
+   :width: 350
 
   - **Quantidade de valores que podem ser representados:** 256 (pois a contagem vai de 0 para cor preta até 255 para cor branca).
+  
   - **Intervalo de valores a ser plotado no eixo X:** de **0** até **255**.
 
 .. code-block:: python
@@ -123,7 +135,6 @@ Por hora, nosso objetivo e deixar a variação dos pixel "suavizada" para que n�
 Podemos sar o filtro (*kernel*) que multiplique os pixels pelos valores médios dos pixels vizinhos usando o método **`blur( )`** e os seus parâmetros:    
 
 - **imagem:** imagem em tons de cinza.
-
 
 - **tamanho do *kernel*:** neste caso usaremos um *kernel* de cinco linhas por cinco colunas:
 
@@ -199,6 +210,7 @@ Usa ao mesmo tempo:
   - **Filtro Sobel:** para detectar as bordas.
 
 Para usarmos o detector de bordas *Canny*, utilizamod o método ``Canny( )`` e seus parâmetros:     
+
   - **imagem:** imagem em que aplicaremos o detector de bordas *Canny*.
   - **Limiar mínimo:** valor mínimo do pixel. Todos os pixels iguais ou menores que este valor não serão considerados como parte da borda.
   - **Limiar superior:** valor máximo do pixel. Todos os pixels com valores superiores a este valor serão considerados parte da borda.
