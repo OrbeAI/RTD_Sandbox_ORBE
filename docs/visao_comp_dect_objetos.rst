@@ -93,7 +93,7 @@ Para plotarmos um histograma, usaremos a biblioteca **Matplotlib** com o método
 
    .. image:: images/visao_comp/vetor.png
       :align: center
-      :width: 350
+      :width: 550
 
 
   - **Quantidade de valores que podem ser representados:** 256 (pois a contagem vai de 0 para cor preta até 255 para cor branca).
