@@ -80,16 +80,20 @@ Para plotarmos um histograma, usaremos a biblioteca **Matplotlib** com o método
 
  - **Imagem:** imagem em tons de cinza.
  
-    - Repare que é o método ``ravel()`` que coloca todos os valores dos pixels em um vetor (como se fosse uma lista em Python).
 
-.. image:: images/visao_comp/valores_pixels.png
-   :align: center
-   :width: 350
+.. note::
+   
+   Repare que é o método ``ravel()`` pega todos os valores dos pixels na imagem abaixo.
 
+   .. image:: images/visao_comp/valores_pixels.png
+      :align: center
+      :width: 350
+   
+   E organiza em um único vetor (como se fosse uma lista em Python)
 
-.. image:: images/visao_comp/vetor.png
-   :align: center
-   :width: 350
+   .. image:: images/visao_comp/vetor.png
+      :align: center
+      :width: 350
 
 
   - **Quantidade de valores que podem ser representados:** 256 (pois a contagem vai de 0 para cor preta até 255 para cor branca).
