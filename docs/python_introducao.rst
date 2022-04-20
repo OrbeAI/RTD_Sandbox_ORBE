@@ -353,4 +353,4 @@ Exemplo:
    idade = 33
 
    #Utilizando o método f ao invés do format
-  print(f"Meu nome é {nome} e eu tenho {idade} anos.") 
+   print(f"Meu nome é {nome} e eu tenho {idade} anos.") 
