@@ -354,3 +354,9 @@ Exemplo:
 
    #Utilizando o método f ao invés do format
    print(f"Meu nome é {nome} e eu tenho {idade} anos.") 
+
+**Este é o resultado:**
+
+.. code-block:: python
+
+   >>> Meu nome é Rafael e eu tenho 33 anos
