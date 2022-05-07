@@ -41,7 +41,7 @@ Material de referência
    grafico_matplotlib_barra.rst
    grafico_matplotlib_histograma.rst
    grafico_matplotlib_boxplot.rst
-   grafico_folium_grafico_geografico.rst
+   grafico_folium_geografico.rst
    
 .. toctree::
    :caption: GITHUB
