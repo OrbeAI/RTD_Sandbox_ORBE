@@ -1,4 +1,4 @@
 /* Hide "On GitHub" section from versions menu */
-body > div.rst-versions.shift-up > div.rst-other-versions > div.injected > dl:nth-child(4) {
+div.rst-versions.shift-up > div.rst-other-versions > div.injected > dl:nth-child(4) {
     display: none;
 }
