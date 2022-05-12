@@ -42,11 +42,11 @@ html_theme_options = {
     'display_version': False
 }
 
-html_context = {
-"display_github": False, # Add 'Edit on Github' link instead of 'View page source'
-"last_updated": False,
-"commit": False,
-}
+#html_context = {
+#"display_github": False, # Add 'Edit on Github' link instead of 'View page source'
+#"last_updated": False,
+#"commit": False,
+#}
 
 # -- Options for EPUB output
 # epub_show_urls = 'footnote'
