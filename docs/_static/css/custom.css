@@ -2,3 +2,6 @@
 div.rst-versions.shift-up > div.rst-other-versions > div.injected {
     display: none;
 }
+
+var thingToRemove = document.querySelectorAll("rst-other-versions")[0];
+thingToRemove.parentNode.removeChild(thingToRemove);
