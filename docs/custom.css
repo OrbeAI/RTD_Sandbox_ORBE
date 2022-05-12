@@ -1,4 +1,0 @@
-/* Hide "On GitHub" section from versions menu */
-div.rst-current-versions {
-    display:none;
-}
