@@ -1,4 +1,4 @@
 /* Hide "On GitHub" section from versions menu */
-.rst-versions.shift-up > .rst-other-versions > .injected {
+.rst-versions {
     display: none;
 }
