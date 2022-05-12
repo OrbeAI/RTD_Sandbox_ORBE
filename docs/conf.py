@@ -35,8 +35,6 @@ html_static_path = ['_static']
 
 html_css_files = ['custom.css', '_static/custom.css']
 
-html_theme = 'sphinx_rtd_theme'
-
 html_logo = 'images/logo/logo_orbe.png'
 
 html_theme_options = {
